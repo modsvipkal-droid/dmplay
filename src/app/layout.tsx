@@ -44,6 +44,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
   },
+  icons: {
+    icon: [
+      { url: "/dmplay-icon.webp", type: "image/webp" },
+      { url: "/icon.webp", type: "image/webp" },
+    ],
+    shortcut: "/dmplay-icon.webp",
+    apple: "/dmplay-icon.webp",
+  },
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,
@@ -54,9 +62,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.name} Online Gaming Experience`,
+        width: 640,
+        height: 640,
+        alt: `${siteConfig.name} Official Main Icon`,
       },
     ],
   },
@@ -106,8 +114,9 @@ export default function RootLayout({
         url: siteConfig.url,
         logo: {
           "@type": "ImageObject",
-          url: `${siteConfig.url}/dmplay.webp`,
+          url: `${siteConfig.url}/dmplay-icon.webp`,
         },
+        image: `${siteConfig.url}/dmplay-icon.webp`,
         sameAs: [siteConfig.links.telegram],
       },
       {
