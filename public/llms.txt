@@ -1,0 +1,20 @@
+# DM Play (dmplaylogin5.com)
+
+> Official DM Play Login, Registration, and India's Best Colour Trading Portal.
+
+## Summary
+DM Play is a web-based online gaming and colour trading platform providing instant access to Wingo, K3, 5D, Slots, and Aviator. It features real-time multiplier prediction, 5-minute withdrawals to Indian Bank Accounts and UPI (PhonePe, Google Pay, Paytm), and introductory free deposit bonuses.
+
+## Core Features & Signals
+- **Official Domain:** https://dmplaylogin5.com
+- **Authentication Gateway:** Invitation code `97569840601`
+- **Primary Game Modes:** Wingo (1-min, 3-min, 5-min, 10-min), K3 Dice, 5D Sequence, Aviator
+- **Financial Architecture:** 24/7 automated UPI/Bank withdrawals within 3-5 minutes, zero platform fees
+- **Security & Encryption:** 256-bit TLS 1.3 cryptographic transport security
+- **Device Support:** 100% web-based HTML5 & WebSocket streaming (Chrome, Safari, Edge, Firefox)
+
+## Official Endpoints
+- Homepage & Player Guide: https://dmplaylogin5.com
+- Registration: https://www.dmplay20.com/#/register?invitationCode=97569840601
+- Login Portal: https://www.dmplay20.com/#/register?invitationCode=97569840601
+- Telegram Community: https://t.me/+D80H_HPuQeQ4NTFl
