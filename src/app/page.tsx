@@ -291,26 +291,18 @@ export default function Home() {
           className="mx-auto flex w-full max-w-[474px] items-center justify-between px-3 sm:px-4"
           style={{ height: "55.61px" }}
         >
-          {/* Left side: Main Icon Avatar + Official dmplay.webp brand logo */}
+          {/* Left side: Official dmplay.webp brand logo (151.67px x 55.61px) */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 shrink-0 transition-opacity hover:opacity-95"
+            className="flex items-center shrink-0 transition-opacity hover:opacity-95"
             aria-label={`${siteConfig.name} Home`}
           >
-            <Image
-              src="/dmplay-icon.webp"
-              alt="DMPlay Main Icon"
-              width={38}
-              height={38}
-              className="h-9 w-9 rounded-full object-cover shadow-sm ring-2 ring-[#FF5A3D]/25"
-              priority
-            />
             <Image
               src="/dmplay.webp"
               alt="DMPlay Logo"
               width={152}
               height={56}
-              style={{ width: "135px", height: "auto" }}
+              style={{ width: "151.67px", height: "55.61px" }}
               className="object-contain"
               priority
             />
@@ -357,17 +349,10 @@ export default function Home() {
             <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
               {/* Left Column: Heading, Copy, Actions, AI Summary */}
               <div className="text-center lg:col-span-7 lg:text-left">
-                {/* Promotional badge with Official Icon */}
+                {/* Promotional badge */}
                 <div className="inline-flex items-center gap-2 rounded-full border border-[#FFE7DF] bg-[#FFF2EE] px-3.5 py-1.5 text-xs font-bold text-[#FF5A3D] shadow-sm">
-                  <Image
-                    src="/dmplay-icon.webp"
-                    alt="DM Play Main Icon"
-                    width={20}
-                    height={20}
-                    className="h-5 w-5 rounded-full object-cover ring-1 ring-[#FF5A3D]/30"
-                    priority
-                  />
-                  <span>Official Player Acquisition Portal</span>
+                  <span className="flex h-2 w-2 rounded-full bg-[#FF5A3D] animate-pulse" />
+                  Official Player Acquisition Portal
                 </div>
 
                 {/* Main H1 for SEO with Controlled Typography Hierarchy */}
@@ -474,14 +459,10 @@ export default function Home() {
                   {/* Card Header Bar */}
                   <div className="flex items-center justify-between border-b border-[#F2E8E4] pb-3.5">
                     <div className="flex items-center gap-2">
-                      <Image
-                        src="/dmplay-icon.webp"
-                        alt="DM Play Main Icon"
-                        width={22}
-                        height={22}
-                        className="h-5 w-5 rounded-full object-cover ring-1 ring-[#FF5A3D]/30"
-                      />
-                      <span className="text-xs font-mono font-bold text-[#1E2637]">dmplaylogin5.com</span>
+                      <div className="h-3 w-3 rounded-full bg-[#FB5B5B]" />
+                      <div className="h-3 w-3 rounded-full bg-[#FEAA57]" />
+                      <div className="h-3 w-3 rounded-full bg-[#18B660]" />
+                      <span className="ml-2 text-xs font-mono font-medium text-[#A48C82]">dmplaylogin5.com</span>
                     </div>
                     <div className="flex items-center gap-1.5 rounded-full bg-[#EBF8F1] px-2.5 py-0.5 text-[11px] font-bold text-[#18B660]">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#18B660] animate-ping" />
@@ -1427,22 +1408,15 @@ export default function Home() {
             <div className="lg:col-span-2">
               <Link
                 href="/"
-                className="inline-flex items-center gap-3 transition-opacity hover:opacity-95"
+                className="inline-block transition-opacity hover:opacity-95"
                 aria-label="DMPlay Home"
               >
-                <Image
-                  src="/dmplay-icon.webp"
-                  alt="DMPlay Official Main Icon"
-                  width={44}
-                  height={44}
-                  className="h-11 w-11 rounded-full object-cover ring-2 ring-white/15 shadow-md"
-                />
                 <Image
                   src="/dmplay.webp"
                   alt="DMPlay Logo"
                   width={152}
                   height={56}
-                  className="h-9 w-auto object-contain brightness-110"
+                  className="h-10 w-auto object-contain brightness-110"
                 />
               </Link>
               <p className="mt-4 text-xs sm:text-sm leading-relaxed text-[#8E9794] max-w-sm font-normal">
