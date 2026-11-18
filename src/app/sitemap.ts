@@ -2,12 +2,10 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const currentDate = new Date().toISOString();
-
   return [
     {
       url: siteConfig.url,
-      lastModified: currentDate,
+      lastModified: siteConfig.lastUpdated,
       changeFrequency: "daily",
       priority: 1.0,
     },

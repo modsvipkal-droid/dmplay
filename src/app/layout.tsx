@@ -44,6 +44,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
   },
+  verification: {
+    google: "google1b1999a4a1bb3ef4",
+  },
   icons: {
     icon: [
       { url: "/dmplay-icon.webp", type: "image/webp" },

@@ -313,7 +313,7 @@ export default function Home() {
             <a
               href={REGISTER_URL}
               target="_self"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow sponsored"
               className="flex items-center justify-center rounded-full bg-gradient-to-r from-[#FF7A5C] to-[#FF5A3D] px-3.5 py-1.5 text-xs sm:text-sm font-bold text-white shadow-sm shadow-[#FF5A3D]/25 transition-all duration-200 hover:opacity-95 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#FF5A3D]"
             >
               Registration
@@ -321,7 +321,7 @@ export default function Home() {
             <a
               href={LOGIN_URL}
               target="_self"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow sponsored"
               className="flex items-center justify-center rounded-full border border-[#F0E5E0] bg-[#FFF9F7] px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-[#1E2637] transition-all duration-200 hover:border-[#FF5A3D] hover:bg-white hover:text-[#FF5A3D] focus:outline-none focus:ring-2 focus:ring-[#FF5A3D]"
             >
               Login
@@ -357,11 +357,11 @@ export default function Home() {
 
                 {/* Main H1 for SEO with Controlled Typography Hierarchy */}
                 <h1 className="mt-5 text-3xl font-extrabold tracking-tight text-[#1E2637] sm:text-4xl md:text-5xl lg:text-[3.25rem] lg:leading-[1.15]">
-                  Welcome to{" "}
+                  DM Play Login –{" "}
                   <span className="bg-gradient-to-r from-[#FF8C67] to-[#FF5A3D] bg-clip-text text-transparent">
-                    DM PLAY
+                    Best Colour Trading
                   </span>{" "}
-                  Online Gaming Platform
+                  &amp; Online Gaming Portal
                 </h1>
 
                 {/* Subtitle with High-Readability Line Height */}
@@ -418,7 +418,7 @@ export default function Home() {
                   <a
                     href={REGISTER_URL}
                     target="_self"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow sponsored"
                     className="w-full sm:w-auto h-12 inline-flex items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-[#FF7A5C] to-[#FF5A3D] px-8 text-sm sm:text-base font-bold text-white shadow-lg shadow-[#FF5A3D]/25 transition-all duration-200 hover:opacity-95 hover:shadow-xl hover:shadow-[#FF5A3D]/35 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#FF5A3D]"
                   >
                     Register Account
@@ -427,7 +427,7 @@ export default function Home() {
                   <a
                     href={LOGIN_URL}
                     target="_self"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow sponsored"
                     className="w-full sm:w-auto h-12 inline-flex items-center justify-center gap-2 rounded-2xl border border-[#F0E5E0] bg-white px-8 text-sm sm:text-base font-bold text-[#1E2637] shadow-sm transition-all duration-200 hover:border-[#FF5A3D] hover:text-[#FF5A3D] hover:bg-[#FFF9F7] focus:outline-none focus:ring-2 focus:ring-[#FF5A3D]"
                   >
                     Sign In to Platform
@@ -482,6 +482,7 @@ export default function Home() {
                         alt="DM Play WinGo Colour Trading Live Game"
                         width={114}
                         height={247}
+                        fetchPriority="high"
                         className="w-full h-auto rounded-[18px]"
                       />
                     </div>
@@ -493,6 +494,7 @@ export default function Home() {
                         alt="DM Play Verified Completed ₹5000 Payout Proof"
                         width={114}
                         height={247}
+                        fetchPriority="high"
                         className="w-full h-auto rounded-[18px]"
                       />
                     </div>
@@ -523,7 +525,7 @@ export default function Home() {
                       <a
                         href={REGISTER_URL}
                         target="_self"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer nofollow sponsored"
                         className="block w-full rounded-xl bg-gradient-to-r from-[#FF7A5C] to-[#FF5A3D] py-2.5 text-xs font-bold text-white shadow-sm transition-opacity hover:opacity-95"
                       >
                         Quick Join via Invitation
@@ -755,8 +757,8 @@ export default function Home() {
                       <div className="mt-4 pt-3 border-t border-[#F2E8E4] flex items-center justify-between">
                         <a
                           href={item.href}
-                          target="_self"
-                          rel="noopener noreferrer"
+                          target={item.href === TELEGRAM_URL ? "_blank" : "_self"}
+                          rel={item.href === TELEGRAM_URL ? "noopener noreferrer nofollow" : "noopener noreferrer nofollow sponsored"}
                           className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#FF5A3D] transition-colors hover:text-[#FF8C67]"
                         >
                           <span>{item.actionText}</span>
@@ -899,7 +901,7 @@ export default function Home() {
                   </p>
                   <ul className="list-disc pl-5 space-y-2 text-sm text-[#5A6578]">
                     <li><strong className="text-[#1E2637]">Always Verify the Domain:</strong> Make sure your address bar displays <strong className="font-mono text-[#1E2637]">dmplaylogin5.com</strong> before entering credentials.</li>
-                    <li><strong className="text-[#1E2637]">Direct Gateway Click:</strong> Click the official <a href={LOGIN_URL} target="_self" className="text-[#FF5A3D] font-bold hover:underline">Login button</a> at the top of this portal. This opens the 256-bit TLS encrypted authentication gateway directly.</li>
+                    <li><strong className="text-[#1E2637]">Direct Gateway Click:</strong> Click the official <a href={LOGIN_URL} target="_self" rel="noopener noreferrer nofollow sponsored" className="text-[#FF5A3D] font-bold hover:underline">Login button</a> at the top of this portal. This opens the 256-bit TLS encrypted authentication gateway directly.</li>
                     <li><strong className="text-[#1E2637]">Zero APK Download:</strong> Authentic DM Play operates completely within Google Chrome, Apple Safari, or Mozilla Firefox. You do not need to sideload unverified third-party APK files on your phone.</li>
                   </ul>
 
@@ -1240,7 +1242,7 @@ export default function Home() {
                   <a
                     href={LOGIN_URL}
                     target="_self"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow sponsored"
                     className="h-10 px-5 inline-flex items-center justify-center rounded-2xl border border-[#F0E5E0] bg-[#FFF9F7] text-xs font-bold text-[#1E2637] hover:border-[#FF5A3D] hover:text-[#FF5A3D] hover:bg-white transition-all duration-200"
                   >
                     DM Play Login
@@ -1248,7 +1250,7 @@ export default function Home() {
                   <a
                     href={REGISTER_URL}
                     target="_self"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow sponsored"
                     className="h-10 px-5 inline-flex items-center gap-1.5 rounded-2xl bg-gradient-to-r from-[#FF7A5C] to-[#FF5A3D] text-xs font-bold text-white shadow-sm hover:opacity-95 transition-all duration-200"
                   >
                     Register & Claim Bonus
@@ -1320,7 +1322,7 @@ export default function Home() {
                             <a
                               href={REGISTER_URL}
                               target="_self"
-                              rel="noopener noreferrer"
+                              rel="noopener noreferrer nofollow sponsored"
                               className="inline-flex items-center text-xs font-bold text-[#FF5A3D] hover:text-[#FF8C67] underline underline-offset-4"
                             >
                               Open Official Registration Page &rarr;
@@ -1332,7 +1334,7 @@ export default function Home() {
                             <a
                               href={LOGIN_URL}
                               target="_self"
-                              rel="noopener noreferrer"
+                              rel="noopener noreferrer nofollow sponsored"
                               className="inline-flex items-center text-xs font-bold text-[#FF5A3D] hover:text-[#FF8C67] underline underline-offset-4"
                             >
                               Go to Platform Login Portal &rarr;
@@ -1344,7 +1346,7 @@ export default function Home() {
                             <a
                               href={TELEGRAM_URL}
                               target="_blank"
-                              rel="noopener noreferrer"
+                              rel="noopener noreferrer nofollow"
                               className="inline-flex items-center text-xs font-bold text-[#54B0FD] hover:text-[#2AD4C5] underline underline-offset-4"
                             >
                               Join Official Telegram Community &rarr;
@@ -1379,7 +1381,7 @@ export default function Home() {
               <a
                 href={REGISTER_URL}
                 target="_self"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow sponsored"
                 className="w-full sm:w-auto h-12 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#FF7A5C] to-[#FF5A3D] px-8 text-sm sm:text-base font-bold text-white shadow-lg shadow-[#FF5A3D]/25 transition-all duration-200 hover:opacity-95 hover:shadow-xl hover:shadow-[#FF5A3D]/35 focus:outline-none focus:ring-2 focus:ring-[#FF5A3D]"
               >
                 Register Your Account
@@ -1388,7 +1390,7 @@ export default function Home() {
               <a
                 href={LOGIN_URL}
                 target="_self"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow sponsored"
                 className="w-full sm:w-auto h-12 inline-flex items-center justify-center gap-2 rounded-2xl border border-[#F0E5E0] bg-white px-8 text-sm sm:text-base font-bold text-[#1E2637] shadow-sm transition-all duration-200 hover:border-[#FF5A3D] hover:text-[#FF5A3D] hover:bg-[#FFF9F7] focus:outline-none focus:ring-2 focus:ring-[#FF5A3D]"
               >
                 Sign In
@@ -1457,7 +1459,7 @@ export default function Home() {
                   <a
                     href={REGISTER_URL}
                     target="_self"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow sponsored"
                     className="inline-flex items-center gap-1.5 font-bold text-[#FF6E54] hover:text-white transition-colors"
                   >
                     <span>New Player Registration</span>
@@ -1468,7 +1470,7 @@ export default function Home() {
                   <a
                     href={LOGIN_URL}
                     target="_self"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow sponsored"
                     className="inline-flex items-center gap-1.5 transition-colors hover:text-white"
                   >
                     <span>Account Sign In</span>
@@ -1479,7 +1481,7 @@ export default function Home() {
                   <a
                     href={TELEGRAM_URL}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="inline-flex items-center gap-1.5 font-semibold text-[#29B6F6] hover:text-white transition-colors"
                   >
                     <span>Telegram Community</span>
