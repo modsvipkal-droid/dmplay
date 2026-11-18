@@ -1,77 +1,79 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig, LOGIN_URL, REGISTER_URL, TELEGRAM_URL } from "@/config/site";
-import { ShieldCheck, ExternalLink, Shield } from "lucide-react";
+import { ShieldCheck, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="community" className="bg-[#0E1412] text-[#9BA3AF] pt-14 pb-12 border-t border-[#1C2522]">
+    <footer id="community" className="bg-[#0B100E] text-[#9BA3AF] pt-12 pb-10 border-t border-[#1C2522]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
-          {/* Brand Info */}
-          <div className="lg:col-span-2">
-            <Link
-              href="/"
-              className="inline-block transition-opacity hover:opacity-95"
-              aria-label="DMPlay Home"
-            >
-              <Image
-                src="/dmplay.webp"
-                alt="DMPlay Logo"
-                width={152}
-                height={56}
-                className="h-10 w-auto object-contain brightness-110"
-              />
-            </Link>
-            <p className="mt-4 text-xs sm:text-sm leading-relaxed text-[#8E9794] max-w-sm font-normal">
-              DMPlay is an independent, informative promotional portal connecting players to modern online interactive entertainment, browser multiplayer matchmaking, and community tournaments.
-            </p>
-            <div className="mt-5 flex items-center gap-2 text-xs text-[#717A8A]">
-              <ShieldCheck className="h-4 w-4 text-[#FF5A3D]" />
-              <span>Promoting fair play &amp; responsible digital gaming entertainment.</span>
-            </div>
+        {/* Brand Information */}
+        <div className="max-w-2xl mb-8">
+          <Link
+            href="/"
+            className="inline-block transition-opacity hover:opacity-95"
+            aria-label="DMPlay Home"
+          >
+            <Image
+              src="/dmplay.webp"
+              alt="DMPlay Logo"
+              width={152}
+              height={56}
+              className="h-10 w-auto object-contain brightness-110"
+            />
+          </Link>
+          <p className="mt-4 text-xs sm:text-sm leading-relaxed text-[#8E9794] font-normal">
+            DMPlay is an independent, informative promotional portal connecting players to modern online interactive entertainment, browser multiplayer matchmaking, and community tournaments.
+          </p>
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-[#717A8A]">
+            <ShieldCheck className="h-4 w-4 text-[#FF5A3D]" />
+            <span>SSL 256-Bit Secured Gateway &bull; Promoting Fair Play</span>
           </div>
+        </div>
 
-          {/* Quick Links */}
+        {/* 2-Column Clean Grid Layout */}
+        <div className="grid grid-cols-2 gap-6 sm:gap-14 border-t border-[#1C2522] pt-8">
+          {/* Column 1: PLATFORM & LEGAL (4 New Pages) */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-white">
-              Quick Navigation
+              Platform &amp; Legal
             </h3>
             <ul className="mt-4 space-y-2.5 text-xs sm:text-sm">
               <li>
-                <Link href="/#why-choose" className="transition-colors hover:text-white">
-                  Why Choose Us
+                <Link href="/about" className="transition-colors hover:text-white">
+                  About DM Play Portal
                 </Link>
               </li>
               <li>
-                <Link href="/#how-it-works" className="transition-colors hover:text-white">
-                  How It Works
+                <Link
+                  href="/responsible-gaming"
+                  className="inline-flex items-center gap-1.5 text-[#FF8C67] hover:text-white transition-colors"
+                >
+                  <span className="rounded bg-[#FF5A3D]/20 px-1 py-0.5 text-[10px] font-bold text-[#FF5A3D]">
+                    18+
+                  </span>
+                  <span>Responsible Gaming</span>
                 </Link>
               </li>
               <li>
-                <Link href="/#specs" className="transition-colors hover:text-white">
-                  Comparison &amp; Specs
+                <Link href="/privacy" className="transition-colors hover:text-white">
+                  Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/#guide" className="transition-colors hover:text-white">
-                  Player Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/#faq" className="transition-colors hover:text-white">
-                  FAQ
+                <Link href="/terms" className="transition-colors hover:text-white">
+                  Terms &amp; Conditions
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Player Gateways */}
+          {/* Column 2: SUPPORT & GATEWAYS */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-white">
-              Player Gateways
+              Support &amp; Gateways
             </h3>
             <ul className="mt-4 space-y-2.5 text-xs sm:text-sm">
               <li>
@@ -108,66 +110,26 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link
-                  href="/#specs"
-                  className="transition-colors hover:text-white"
-                >
-                  System Requirements
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#faq"
-                  className="transition-colors hover:text-white"
-                >
+                <Link href="/#faq" className="transition-colors hover:text-white">
                   Onboarding FAQ
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          {/* Compliance & Legal (4 Screen Links Added Here) */}
-          <div>
-            <h3 className="text-xs font-bold uppercase tracking-wider text-white">
-              Compliance &amp; Legal
-            </h3>
-            <ul className="mt-4 space-y-2.5 text-xs sm:text-sm">
               <li>
-                <Link href="/about" className="transition-colors hover:text-white">
-                  About DM Play Portal
-                </Link>
-              </li>
-              <li>
-                <Link href="/responsible-gaming" className="transition-colors hover:text-white flex items-center gap-1.5 text-[#FF8C67]">
-                  <span className="rounded bg-[#FF5A3D]/20 px-1 py-0.5 text-[10px] font-bold text-[#FF5A3D]">18+</span>
-                  Responsible Gaming
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="transition-colors hover:text-white">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="transition-colors hover:text-white">
-                  Terms &amp; Conditions
+                <Link href="/#specs" className="transition-colors hover:text-white">
+                  System Requirements
                 </Link>
               </li>
             </ul>
-            <div className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] font-bold text-[#18B660]">
-              <Shield className="h-3.5 w-3.5" />
-              <span>SSL 256-Bit Secured Gateway</span>
-            </div>
           </div>
         </div>
 
         {/* Disclaimer & Copyright */}
-        <div className="mt-12 border-t border-[#1C2522] pt-8">
+        <div className="mt-8 border-t border-[#1C2522] pt-6">
           <p className="text-xs leading-relaxed text-[#717A8A]">
             <strong className="text-white font-bold">Disclaimer:</strong> This website is an informational promotional and SEO acquisition portal for the official DMPlay platform. It is not the gaming application itself. No login credentials or financial payments are collected on this domain. By clicking Login or Register, you are redirected to the official external portal ({LOGIN_URL}). Please verify that online entertainment conforms with your local municipal and national regulations.
           </p>
 
-          <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6F7A75]">
+          <div className="mt-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6F7A75]">
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
               <p>&copy; {currentYear} {siteConfig.name}. All rights reserved.</p>
               <span className="hidden sm:inline">&bull;</span>
@@ -177,7 +139,7 @@ export default function Footer() {
               <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
             </div>
             <p className="text-[#6F7A75]">
-              Powered by high-performance Next.js App Router &amp; Tailwind CSS.
+              Strictly 18+ &bull; Responsible Gaming Portal
             </p>
           </div>
         </div>
