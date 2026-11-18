@@ -15,6 +15,10 @@ DM Play is a web-based online gaming and colour trading platform providing insta
 
 ## Official Endpoints
 - Homepage & Player Guide: https://dmplaylogin5.com
+- About Portal: https://dmplaylogin5.com/about
+- Responsible Gaming (18+): https://dmplaylogin5.com/responsible-gaming
+- Privacy Policy: https://dmplaylogin5.com/privacy
+- Terms & Conditions: https://dmplaylogin5.com/terms
 - Registration: https://www.dmplay20.com/#/register?invitationCode=97569840601
 - Login Portal: https://www.dmplay20.com/#/register?invitationCode=97569840601
 - Telegram Community: https://t.me/+D80H_HPuQeQ4NTFl

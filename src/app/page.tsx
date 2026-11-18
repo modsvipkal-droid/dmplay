@@ -1507,14 +1507,34 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Compliance & Safety */}
+            {/* Compliance & Legal */}
             <div>
               <h3 className="text-xs font-bold uppercase tracking-wider text-white">
-                Compliance & Safety
+                Compliance &amp; Legal
               </h3>
-              <p className="mt-4 text-xs leading-relaxed text-[#8E9794] font-normal">
-                Player verification is governed by SSL encryption protocols. No sensitive authentication credentials or financial data are stored or processed on this promotional landing site.
-              </p>
+              <ul className="mt-4 space-y-2.5 text-xs sm:text-sm">
+                <li>
+                  <Link href="/about" className="transition-colors hover:text-white">
+                    About DM Play Portal
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/responsible-gaming" className="transition-colors hover:text-white flex items-center gap-1.5 text-[#FF8C67]">
+                    <span className="rounded bg-[#FF5A3D]/20 px-1 py-0.5 text-[10px] font-bold text-[#FF5A3D]">18+</span>
+                    Responsible Gaming
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="transition-colors hover:text-white">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms" className="transition-colors hover:text-white">
+                    Terms &amp; Conditions
+                  </Link>
+                </li>
+              </ul>
               <div className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] font-bold text-[#18B660]">
                 <Shield className="h-3.5 w-3.5" />
                 <span>SSL 256-Bit Secured Gateway</span>
@@ -1529,7 +1549,14 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6F7A75]">
-              <p>&copy; {currentYear} {siteConfig.name}. All rights reserved.</p>
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                <p>&copy; {currentYear} {siteConfig.name}. All rights reserved.</p>
+                <span className="hidden sm:inline">&bull;</span>
+                <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
+                <Link href="/responsible-gaming" className="hover:text-white transition-colors text-[#FF8C67]">18+ Protection</Link>
+                <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
+                <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
+              </div>
               <p className="text-[#6F7A75]">
                 Powered by high-performance Next.js App Router & Tailwind CSS.
               </p>
