@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig, LOGIN_URL, REGISTER_URL, TELEGRAM_URL } from "@/config/site";
+import Footer from "@/components/Footer";
 import {
   Shield,
   Lock,
@@ -174,31 +175,8 @@ export default function PrivacyPolicyPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-[#1C2522] bg-[#111715] py-12 text-[#8E9794]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-b border-[#1C2522] pb-8 text-xs">
-            <Link href="/" className="inline-block transition-opacity hover:opacity-95">
-              <Image
-                src="/dmplay.webp"
-                alt="DMPlay Logo"
-                width={152}
-                height={56}
-                className="h-9 w-auto object-contain brightness-110"
-              />
-            </Link>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-[#8E9794]">
-              <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
-              <Link href="/responsible-gaming" className="hover:text-white transition-colors">Responsible Gaming (18+)</Link>
-              <Link href="/privacy" className="hover:text-white transition-colors text-white">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-            </div>
-          </div>
-          <p className="mt-6 text-center text-xs text-[#717A8A]">
-            &copy; {currentYear} {siteConfig.name}. All rights reserved. Strict User Privacy Standards.
-          </p>
-        </div>
-      </footer>
+      {/* Main Screen Unified Footer */}
+      <Footer />
     </div>
   );
 }
