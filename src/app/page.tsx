@@ -371,7 +371,7 @@ export default function Home() {
                     <strong className="font-bold text-[#1E2637]">DM Play</strong> is an online gaming platform where users can explore popular games such as Wingo, K3, 5D, Poker, Slots, and Aviator.
                   </p>
                   <p>
-                    In this guide, you&apos;ll learn everything about DM Play, including step-by-step registration, platform features, how the platform works, and account and withdrawal information.
+                    In this guide, you&apos;ll learn everything about DM Play, including step-by-step registration, platform features, how the platform works, and account and withdrawal information. For technical background, review our <Link href="/about" className="font-semibold text-[#FF5A3D] underline underline-offset-4 hover:text-[#FF8C67]">About DM Play Portal Guide</Link> and our mandatory <Link href="/responsible-gaming" className="font-semibold text-[#FF5A3D] underline underline-offset-4 hover:text-[#FF8C67]">18+ Responsible Gaming Policy</Link>.
                   </p>
                   <p className="font-bold text-[#FF5A3D]">
                     Discover DM Play and explore its features today!
@@ -1227,8 +1227,16 @@ export default function Home() {
                   <p>
                     DM Play is committed to ethical entertainment. All real-time predictions utilize cryptographically verified Random Number Generators (RNG) complying with international gaming fairness standards. No outcomes are influenced by player volume or bet distribution.
                   </p>
-                  <div className="rounded-2xl border border-[#F0E5E0] bg-[#FFF9F7] p-4 text-xs text-[#5A6578] leading-relaxed">
-                    <strong className="text-[#1E2637] font-bold">Player Advisory:</strong> Online prediction games involve financial probability. Only participate with discretionary funds that do not affect your living expenses. Set personal loss limits, take regular breaks, and never chase losses. This platform is strictly intended for individuals aged 18 and above in jurisdictions where digital entertainment conforms with regional laws.
+                  <div className="rounded-2xl border border-[#F0E5E0] bg-[#FFF9F7] p-4 text-xs text-[#5A6578] leading-relaxed space-y-2">
+                    <p>
+                      <strong className="text-[#1E2637] font-bold">Player Advisory:</strong> Online prediction games involve financial probability. Only participate with discretionary funds that do not affect your living expenses. Set personal loss limits, take regular breaks, and never chase losses. This platform is strictly intended for individuals aged 18 and above in jurisdictions where digital entertainment conforms with regional laws.
+                    </p>
+                    <div className="pt-2 border-t border-[#F0E5E0] flex flex-wrap items-center gap-3 font-semibold text-[#1E2637]">
+                      <span>Read Safety Policies:</span>
+                      <Link href="/responsible-gaming" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">18+ Player Protection &rarr;</Link>
+                      <Link href="/privacy" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Privacy Policy &rarr;</Link>
+                      <Link href="/terms" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Terms &amp; Conditions &rarr;</Link>
+                    </div>
                   </div>
                 </div>
               </div>

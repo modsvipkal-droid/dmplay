@@ -199,6 +199,20 @@ export default function TermsPage() {
                 Under <strong className="text-[#1E2637]">Section 79 of the Information Technology Act, 2000 (India)</strong>, this website functions purely as an intermediary technical communications link. The technical contractors do not initiate transmissions, do not choose the recipients, and do not modify the content transmitted by external operators. All statutory safe-harbor protections apply fully.
               </p>
             </section>
+
+            {/* Supporting Governance & Policy Resources */}
+            <div className="rounded-3xl border border-[#F0E5E0] bg-[#FFF9F7] p-6 text-sm text-[#5A6578]">
+              <h3 className="font-bold text-[#1E2637] text-base mb-2">Supporting Governance &amp; Policy Resources</h3>
+              <p>
+                For additional details regarding user privacy, contractor status, and player safety, consult our supporting documentation:
+              </p>
+              <div className="mt-4 flex flex-wrap gap-4 font-semibold text-[#1E2637]">
+                <Link href="/privacy" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Privacy &amp; Data Security &rarr;</Link>
+                <Link href="/responsible-gaming" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">18+ Responsible Gaming Policy &rarr;</Link>
+                <Link href="/about" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">About Technical Contractor &rarr;</Link>
+                <Link href="/" className="text-[#1E2637] underline underline-offset-2 hover:text-[#FF5A3D]">Homepage Guide &rarr;</Link>
+              </div>
+            </div>
           </div>
         </div>
       </main>

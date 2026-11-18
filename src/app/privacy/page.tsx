@@ -211,6 +211,20 @@ export default function PrivacyPolicyPage() {
                 For technical privacy inquiries, contact our community administrators via <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer nofollow" className="font-bold text-[#54B0FD] underline">DM Play Official Telegram</a>.
               </div>
             </section>
+
+            {/* Supporting Governance & Policy Resources */}
+            <div className="rounded-3xl border border-[#F0E5E0] bg-[#FFF9F7] p-6 text-sm text-[#5A6578]">
+              <h3 className="font-bold text-[#1E2637] text-base mb-2">Supporting Governance &amp; Policy Resources</h3>
+              <p>
+                For complete transparency regarding user safety, contractor safe-harbor terms, and portal guidelines, explore our supporting resources:
+              </p>
+              <div className="mt-4 flex flex-wrap gap-4 font-semibold text-[#1E2637]">
+                <Link href="/terms" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Terms &amp; Conditions &rarr;</Link>
+                <Link href="/about" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">About Technical Contractor &rarr;</Link>
+                <Link href="/responsible-gaming" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">18+ Player Protection Policy &rarr;</Link>
+                <Link href="/" className="text-[#1E2637] underline underline-offset-2 hover:text-[#FF5A3D]">DM Play Login Portal &rarr;</Link>
+              </div>
+            </div>
           </div>
         </div>
       </main>

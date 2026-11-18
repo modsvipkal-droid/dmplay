@@ -229,6 +229,20 @@ export default function ResponsibleGamingPage() {
                 </div>
               </div>
             </section>
+
+            {/* Supporting Legal & Technical Resources */}
+            <div className="rounded-3xl border border-[#F0E5E0] bg-[#FFF9F7] p-6 text-sm text-[#5A6578]">
+              <h3 className="font-bold text-[#1E2637] text-base mb-2">Supporting Governance &amp; Portal Information</h3>
+              <p>
+                To understand our technical operations, contractor status, and data confidentiality frameworks, please explore our supporting resources:
+              </p>
+              <div className="mt-4 flex flex-wrap gap-4 font-semibold text-[#1E2637]">
+                <Link href="/about" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">About Technical Contractor &rarr;</Link>
+                <Link href="/terms" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Terms &amp; Conditions &rarr;</Link>
+                <Link href="/privacy" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Privacy Policy &rarr;</Link>
+                <Link href="/" className="text-[#1E2637] underline underline-offset-2 hover:text-[#FF5A3D]">Homepage Guide &rarr;</Link>
+              </div>
+            </div>
           </div>
         </div>
       </main>

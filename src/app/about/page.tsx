@@ -150,8 +150,13 @@ export default function AboutPage() {
               <p>
                 Any outward hyperlinks, buttons, or informational guides discussing game mechanics (e.g., WinGo, K3, 5D, Aviator) exist strictly as descriptive technical representations of external third-party software environments. 
               </p>
-              <div className="mt-4 p-4 rounded-2xl bg-[#FFF8F5] border border-[#F0E5E0] text-xs sm:text-sm text-[#4A5568]">
-                <strong className="text-[#1E2637]">Express Disclaimer:</strong> We do NOT encourage, endorse, entice, or solicit any visitor to play real-money games or deposit money. We expressly warn all users that real-money gaming involves substantial risk of financial loss and potential addiction. Users must exercise their own independent judgement and comply with their regional laws.
+              <div className="mt-4 p-4 rounded-2xl bg-[#FFF8F5] border border-[#F0E5E0] text-xs sm:text-sm text-[#4A5568] space-y-2">
+                <p>
+                  <strong className="text-[#1E2637]">Express Disclaimer:</strong> We do NOT encourage, endorse, entice, or solicit any visitor to play real-money games or deposit money. We expressly warn all users that real-money gaming involves substantial risk of financial loss and potential addiction. Users must exercise their own independent judgement and comply with their regional laws.
+                </p>
+                <p className="pt-2 border-t border-[#F0E5E0] font-semibold text-[#1E2637]">
+                  Please consult our mandatory <Link href="/responsible-gaming" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">18+ Responsible Gaming &amp; Player Protection Guidelines &rarr;</Link>
+                </p>
               </div>
             </section>
 
@@ -171,6 +176,11 @@ export default function AboutPage() {
                 <li>The technical contractors do not initiate the transmission, do not select the receiver of the transmission, and do not modify the information contained in the external transmission.</li>
                 <li>We observe strict due diligence regarding intermediary guidelines and data security standards.</li>
               </ul>
+              <div className="mt-4 p-4 rounded-2xl bg-[#FFF9F7] border border-[#F0E5E0] text-xs sm:text-sm text-[#4A5568] flex flex-wrap gap-4 font-semibold">
+                <Link href="/privacy" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Review Privacy Policy &rarr;</Link>
+                <Link href="/terms" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Review Terms &amp; Conditions &rarr;</Link>
+                <Link href="/" className="text-[#1E2637] underline underline-offset-2 hover:text-[#FF5A3D]">Return to DM Play Login Portal &rarr;</Link>
+              </div>
             </section>
 
             {/* Section 4: Technical Architecture */}
