@@ -15,9 +15,9 @@ export const siteConfig = {
   domain: "dmplaylogin5.com",
   url: "https://dmplaylogin5.com",
   ogImage: "https://dmplaylogin5.com/dmplay-icon.webp",
-  title: "DM Play Login - Best Colour Trading Website | Official",
+  title: "DM Play Login (dmplaylogin) - Official Login & Registration",
   description:
-    "Official DM Play Login & registration on dmplaylogin5.com. India's top colour trading platform: Wingo, K3, free deposit bonus & 5-minute fast UPI payouts.",
+    "Official DM Play Login portal at dmplaylogin5.com. Complete your dmplaylogin & registration for Wingo, K3, instant bonuses & 5-minute fast UPI withdrawals.",
   links: {
     login: LOGIN_URL,
     register: REGISTER_URL,

@@ -357,11 +357,11 @@ export default function Home() {
 
                 {/* Main H1 for SEO with Controlled Typography Hierarchy */}
                 <h1 className="mt-5 text-3xl font-extrabold tracking-tight text-[#1E2637] sm:text-4xl md:text-5xl lg:text-[3.25rem] lg:leading-[1.15]">
-                  DM Play Login –{" "}
+                  Official{" "}
                   <span className="bg-gradient-to-r from-[#FF8C67] to-[#FF5A3D] bg-clip-text text-transparent">
-                    Best Colour Trading
+                    DM Play Login
                   </span>{" "}
-                  &amp; Online Gaming Portal
+                  (dmplaylogin) Gaming Platform
                 </h1>
 
                 {/* Subtitle with High-Readability Line Height */}
