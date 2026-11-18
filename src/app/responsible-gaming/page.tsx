@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig, LOGIN_URL, REGISTER_URL } from "@/config/site";
+import { siteConfig, LOGIN_URL } from "@/config/site";
 import Footer from "@/components/Footer";
 import {
   ShieldAlert,
@@ -12,26 +12,26 @@ import {
   HeartHandshake,
   ChevronRight,
   LifeBuoy,
+  Briefcase,
+  AlertOctagon,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Responsible Gaming (18+) & Player Protection Policy | DM Play",
+  title: "Responsible Gaming (18+) & Independent Contractor Risk Disclosure",
   description:
-    "Our dedicated commitment to responsible digital gaming entertainment. 18+ age verification, financial risk mitigation, self-exclusion guidelines, and player support resources.",
+    "Strict 18+ player protection policy, financial risk warnings, and independent technical SEO contractor disclosure for dmplaylogin5.com. We do not promote gambling.",
   alternates: {
     canonical: `${siteConfig.url}/responsible-gaming`,
   },
   openGraph: {
-    title: "Responsible Gaming (18+) & Player Protection Policy | DM Play",
+    title: "Responsible Gaming (18+) & Independent Contractor Risk Disclosure",
     description:
-      "Our dedicated commitment to responsible digital gaming entertainment. 18+ age verification, financial risk mitigation, self-exclusion guidelines, and player support resources.",
+      "Strict 18+ player protection policy, financial risk warnings, and independent technical SEO contractor disclosure for dmplaylogin5.com. We do not promote gambling.",
     url: `${siteConfig.url}/responsible-gaming`,
   },
 };
 
 export default function ResponsibleGamingPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <div className="flex min-h-screen flex-col bg-[#FFF7F4] text-[#1E2637]">
       {/* Top Header Bar */}
@@ -61,7 +61,7 @@ export default function ResponsibleGamingPage() {
               rel="noopener noreferrer nofollow sponsored"
               className="flex items-center justify-center rounded-full border border-[#F0E5E0] bg-[#FFF9F7] px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-[#1E2637] transition-all hover:border-[#FF5A3D] hover:text-[#FF5A3D]"
             >
-              Login
+              Login Gateway
             </a>
           </div>
         </div>
@@ -74,56 +74,73 @@ export default function ResponsibleGamingPage() {
           <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-[#717A8A]">
             <Link href="/" className="hover:text-[#FF5A3D] transition-colors">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <span className="font-semibold text-[#1E2637]">Responsible Gaming</span>
+            <span className="font-semibold text-[#1E2637]">Responsible Gaming &amp; Disclaimers</span>
           </nav>
 
-          {/* Page Title */}
-          <div className="border-b border-[#F0E5E0] pb-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#FFE7DF] bg-[#FFF2EE] px-3.5 py-1.5 text-xs font-bold text-[#FF5A3D] mb-4">
-              <ShieldAlert className="h-3.5 w-3.5" />
-              18+ Player Protection Policy
+          {/* CRITICAL TECHNICAL CONTRACTOR & RISK STATEMENT */}
+          <div className="rounded-3xl border-2 border-[#FB5B5B]/40 bg-gradient-to-br from-[#FFF5F3] via-[#FFEBE8] to-[#FFF0EC] p-6 sm:p-8 shadow-md mb-10">
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FB5B5B] text-white shadow-sm">
+                <AlertOctagon className="h-6 w-6" />
+              </div>
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-[#FB5B5B]/15 px-3 py-1 text-xs font-black uppercase tracking-wider text-[#FB5B5B]">
+                  Contractor Safe Harbor &amp; Risk Notice
+                </div>
+                <h2 className="text-xl sm:text-2xl font-black text-[#1E2637] tracking-tight">
+                  Independent SEO Development Assignment &bull; Non-Endorsement Notice
+                </h2>
+                <p className="text-sm sm:text-base leading-relaxed text-[#4A5568] font-medium">
+                  <strong className="text-[#1E2637] font-bold">LEGAL CLARIFICATION:</strong> The creators, technical webmasters, and SEO developers of <strong className="font-mono text-[#1E2637]">dmplaylogin5.com</strong> are external freelance/agency contractors hired exclusively for search engine optimization (SEO), performance metrics, and web design.
+                </p>
+                <div className="rounded-2xl bg-white/80 p-4 border border-[#F2D7D2] text-xs sm:text-sm text-[#3E495B] space-y-2">
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">We Do NOT Promote Gaming:</strong> We do not operate, own, endorse, or promote any online game, betting, or wagering activities.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">High Financial Risk:</strong> Online games involving money carry a severe risk of monetary loss. Never view online games as an investment or regular income opportunity.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">Zero Liability:</strong> The technical contractor bears zero responsibility for external third-party actions, transactions, or losses incurred on external platforms.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1E2637]">
-              Responsible Gaming &amp; Player Welfare
-            </h1>
-            <p className="mt-4 text-base sm:text-lg text-[#5A6578] leading-relaxed">
-              At DM Play and dmplaylogin5.com, we firmly believe that digital gaming entertainment must remain a fun, safe, and controlled recreational activity. We enforce a zero-tolerance policy towards underage participation and provide comprehensive self-regulation guidelines.
-            </p>
           </div>
 
           {/* 18+ Age Restriction Highlight Box */}
-          <div className="mt-8 rounded-3xl border-2 border-[#FF5A3D]/30 bg-gradient-to-r from-[#FFF5F1] to-[#FFEBE4] p-6 sm:p-8">
+          <div className="rounded-3xl border-2 border-[#FF5A3D]/30 bg-gradient-to-r from-[#FFF5F1] to-[#FFEBE4] p-6 sm:p-8 mb-10">
             <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF5A3D] text-white font-extrabold text-xl shadow-md">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#FF5A3D] text-white font-black text-2xl shadow-md">
                 18+
               </div>
               <div>
-                <h2 className="text-lg sm:text-xl font-bold text-[#1E2637]">Strict Legal Age Requirement</h2>
-                <p className="mt-1.5 text-sm sm:text-base text-[#5A6578]">
-                  You must be at least <strong className="text-[#1E2637]">18 years of age</strong> (or the legal age of majority in your jurisdiction) to register an account, participate in games, or access real-money features on DM Play. Underage participation is strictly prohibited by law.
+                <h2 className="text-xl font-bold text-[#1E2637]">Strictly Prohibited for Minors (Under 18 Years)</h2>
+                <p className="mt-2 text-sm sm:text-base text-[#5A6578] leading-relaxed">
+                  Access to real-money online gaming is strictly restricted to adults aged <strong className="text-[#1E2637]">18 years or older</strong>. Minors are legally forbidden from registering or participating. Parents and guardians are strongly advised to install child-safety filter software (e.g., Net Nanny, Qustodio) to restrict underage access.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Key Guidelines */}
-          <div className="mt-10 space-y-8 text-sm sm:text-base text-[#5A6578] leading-relaxed">
-            {/* Financial Risk Notice */}
+          <div className="space-y-8 text-sm sm:text-base text-[#5A6578] leading-relaxed">
+            {/* Severe Financial Risk Warning */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF5EB] text-[#FEAA57]">
                   <AlertTriangle className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">Understanding Financial Risk</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">1. Realistic Assessment of Financial Probability &amp; Risk</h2>
               </div>
               <p>
-                Online interactive games (including colour prediction, lotteries, and crash games) inherently involve elements of financial risk and chance. There is no guaranteed formula or outcome predictability. Please observe these fundamental financial discipline rules:
+                All prediction and multiplier games operate under mathematical algorithms and probability curves. The house or platform operator retains mathematical advantages. Please understand the reality of online gaming:
               </p>
               <ul className="mt-4 space-y-2.5 list-disc pl-5">
-                <li><strong className="text-[#1E2637]">Recreational Budget Only:</strong> Only play with discretionary entertainment funds that you can comfortably afford to lose.</li>
-                <li><strong className="text-[#1E2637]">Never Use Essential Funds:</strong> Never utilize funds allocated for rent, groceries, utility bills, education fees, or family savings.</li>
-                <li><strong className="text-[#1E2637]">Do Not Chase Losses:</strong> Attempting to recover lost funds by placing larger wagers is the single most common cause of financial distress. Accept losses as entertainment cost.</li>
-                <li><strong className="text-[#1E2637]">Not an Investment:</strong> Gaming platforms are recreational entertainment venues, never financial investment products or regular income avenues.</li>
+                <li><strong className="text-[#1E2637]">No Guaranteed Earnings:</strong> There is no system, prediction bot, or algorithm that guarantees winning outcomes. Any claims of guaranteed profits are fraudulent.</li>
+                <li><strong className="text-[#1E2637]">Only Play What You Can Afford to Lose:</strong> Treat any participation strictly as an entertainment expense (like a movie ticket), never an income plan.</li>
+                <li><strong className="text-[#1E2637]">Do Not Borrow Money:</strong> Never take loans, borrow from acquaintances, or utilize credit cards to participate in gaming activities.</li>
+                <li><strong className="text-[#1E2637]">Strictly Avoid Loss Chasing:</strong> When you experience a loss, step away immediately. Attempting to recover lost funds through bigger wagers leads directly to severe financial harm.</li>
               </ul>
             </section>
 
@@ -133,55 +150,55 @@ export default function ResponsibleGamingPage() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF8F1] text-[#18B660]">
                   <Scale className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">Self-Regulation &amp; Safety Controls</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">2. Self-Imposed Limits &amp; Cooling-Off Tools</h2>
               </div>
               <p>
-                Maintaining control over your gameplay habits is paramount. We recommend all players implement the following personal limits:
+                Responsible players maintain absolute command over their screen time and financial allocations:
               </p>
               <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4 text-center">
                   <Coins className="h-6 w-6 text-[#FF5A3D] mx-auto mb-2" />
-                  <h3 className="font-bold text-[#1E2637] text-sm">Deposit Limits</h3>
-                  <p className="mt-1 text-xs text-[#5A6578]">Set a strict daily or weekly cap on how much you deposit into your player balance.</p>
+                  <h3 className="font-bold text-[#1E2637] text-sm">Strict Financial Caps</h3>
+                  <p className="mt-1 text-xs text-[#5A6578]">Pre-determine a fixed daily budget. Once exhausted, do not top up under any circumstance.</p>
                 </div>
                 <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4 text-center">
                   <Clock className="h-6 w-6 text-[#54B0FD] mx-auto mb-2" />
-                  <h3 className="font-bold text-[#1E2637] text-sm">Time Limits</h3>
-                  <p className="mt-1 text-xs text-[#5A6578]">Establish predetermined alarms. Never let gaming interfere with work or sleep.</p>
+                  <h3 className="font-bold text-[#1E2637] text-sm">Time Boundaries</h3>
+                  <p className="mt-1 text-xs text-[#5A6578]">Limit sessions to 20-30 minutes. Never sacrifice personal commitments or occupational duties.</p>
                 </div>
                 <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4 text-center">
                   <LifeBuoy className="h-6 w-6 text-[#18B660] mx-auto mb-2" />
                   <h3 className="font-bold text-[#1E2637] text-sm">Self-Exclusion</h3>
-                  <p className="mt-1 text-xs text-[#5A6578]">Request a cooling-off break or permanent account suspension via customer support.</p>
+                  <p className="mt-1 text-xs text-[#5A6578]">Request a permanent or temporary account freeze directly via operator customer service.</p>
                 </div>
               </div>
             </section>
 
-            {/* Warning Signs Self-Assessment */}
+            {/* Self-Assessment Checklist */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">Self-Assessment Checklist</h2>
-              <p>Ask yourself these questions honestly to ensure your relationship with online gaming remains healthy:</p>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">3. Compulsive Gaming Self-Assessment</h2>
+              <p>Regularly ask yourself these diagnostic questions:</p>
               <ul className="mt-4 space-y-2 text-sm text-[#5A6578]">
                 <li className="flex items-start gap-2">
                   <span className="text-[#FF5A3D] font-bold">&bull;</span>
-                  <span>Do you stay online longer than you originally planned?</span>
+                  <span>Have you ever spent money on gaming that was designated for rent, utilities, or family necessities?</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#FF5A3D] font-bold">&bull;</span>
-                  <span>Have you ever borrowed money or sold personal items to finance gaming?</span>
+                  <span>Do you feel irritable, anxious, or restless when attempting to reduce your screen time?</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#FF5A3D] font-bold">&bull;</span>
-                  <span>Do you experience mood swings, anxiety, or stress after a losing session?</span>
+                  <span>Have you concealed or lied about your gaming habits to family members or close friends?</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#FF5A3D] font-bold">&bull;</span>
-                  <span>Have you lied to family members or close friends about the amount of time or money spent?</span>
+                  <span>Do you view gaming as a potential escape from personal anxiety, depression, or boredom?</span>
                 </li>
               </ul>
-              <p className="mt-4 text-xs font-semibold text-[#FF5A3D]">
-                If you answered &ldquo;Yes&rdquo; to any of these questions, we strongly encourage you to step away and seek assistance from independent counseling organizations.
-              </p>
+              <div className="mt-4 p-4 rounded-xl bg-[#FFF2EE] border border-[#FFE7DF] text-xs font-semibold text-[#FB5B5B]">
+                If you answered &ldquo;Yes&rdquo; to any question, please halt all participation immediately and seek independent support.
+              </div>
             </section>
 
             {/* Independent Support Contacts */}
@@ -190,22 +207,22 @@ export default function ResponsibleGamingPage() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF6FF] text-[#54B0FD]">
                   <HeartHandshake className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">Independent Help &amp; Hotlines</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">4. Independent Counseling Resources</h2>
               </div>
               <p>
-                Confidential, free professional advice is available worldwide for individuals and families impacted by gaming distress:
+                Free, non-judgmental, confidential assistance is available worldwide:
               </p>
               <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-2xl bg-[#FFFDFC] border border-[#F2E8E4]">
-                  <h3 className="font-bold text-[#1E2637]">BeGambleAware</h3>
-                  <p className="mt-1 text-xs text-[#5A6578]">Free, confidential support and treatment information.</p>
+                  <h3 className="font-bold text-[#1E2637]">BeGambleAware (Global)</h3>
+                  <p className="mt-1 text-xs text-[#5A6578]">24/7 free confidential helpline, self-exclusion advice, and clinical support.</p>
                   <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer nofollow" className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-[#54B0FD] hover:underline">
                     Visit begambleaware.org &rarr;
                   </a>
                 </div>
                 <div className="p-4 rounded-2xl bg-[#FFFDFC] border border-[#F2E8E4]">
-                  <h3 className="font-bold text-[#1E2637]">Gamblers Anonymous</h3>
-                  <p className="mt-1 text-xs text-[#5A6578]">Fellowship of men and women sharing mutual experience to resolve shared issues.</p>
+                  <h3 className="font-bold text-[#1E2637]">Gamblers Anonymous (International)</h3>
+                  <p className="mt-1 text-xs text-[#5A6578]">International fellowship providing step-based recovery meetings worldwide.</p>
                   <a href="https://www.gamblersanonymous.org" target="_blank" rel="noopener noreferrer nofollow" className="mt-2 inline-flex items-center gap-1 text-xs font-bold text-[#54B0FD] hover:underline">
                     Visit gamblersanonymous.org &rarr;
                   </a>
@@ -216,7 +233,7 @@ export default function ResponsibleGamingPage() {
         </div>
       </main>
 
-      {/* Main Screen Unified Footer */}
+      {/* Main Screen Unified 2-Column Footer */}
       <Footer />
     </div>
   );

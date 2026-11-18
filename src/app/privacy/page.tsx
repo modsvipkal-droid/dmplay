@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig, LOGIN_URL, REGISTER_URL, TELEGRAM_URL } from "@/config/site";
+import { siteConfig, LOGIN_URL, TELEGRAM_URL } from "@/config/site";
 import Footer from "@/components/Footer";
 import {
   Shield,
@@ -9,29 +9,27 @@ import {
   EyeOff,
   Cookie,
   Server,
-  FileText,
   ChevronRight,
-  Mail,
+  Gavel,
+  ShieldAlert,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | DM Play Login Portal (dmplaylogin5.com)",
+  title: "Privacy Policy | Technical SEO Contractor Data Protection Notice",
   description:
-    "Privacy Policy for dmplaylogin5.com. Discover how we protect player privacy, adhere to strict data security protocols, cookies usage, and SSL encryption.",
+    "Official data privacy statement for dmplaylogin5.com. As independent technical SEO contractors, we do not collect or process player financial credentials or gaming data.",
   alternates: {
     canonical: `${siteConfig.url}/privacy`,
   },
   openGraph: {
-    title: "Privacy Policy | DM Play Login Portal (dmplaylogin5.com)",
+    title: "Privacy Policy | Technical SEO Contractor Data Protection Notice",
     description:
-      "Privacy Policy for dmplaylogin5.com. Discover how we protect player privacy, adhere to strict data security protocols, cookies usage, and SSL encryption.",
+      "Official data privacy statement for dmplaylogin5.com. As independent technical SEO contractors, we do not collect or process player financial credentials or gaming data.",
     url: `${siteConfig.url}/privacy`,
   },
 };
 
 export default function PrivacyPolicyPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <div className="flex min-h-screen flex-col bg-[#FFF7F4] text-[#1E2637]">
       {/* Top Header Bar */}
@@ -61,7 +59,7 @@ export default function PrivacyPolicyPage() {
               rel="noopener noreferrer nofollow sponsored"
               className="flex items-center justify-center rounded-full border border-[#F0E5E0] bg-[#FFF9F7] px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-[#1E2637] transition-all hover:border-[#FF5A3D] hover:text-[#FF5A3D]"
             >
-              Login
+              Login Gateway
             </a>
           </div>
         </div>
@@ -74,108 +72,150 @@ export default function PrivacyPolicyPage() {
           <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-[#717A8A]">
             <Link href="/" className="hover:text-[#FF5A3D] transition-colors">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <span className="font-semibold text-[#1E2637]">Privacy Policy</span>
+            <span className="font-semibold text-[#1E2637]">Privacy Policy &amp; Data Safety</span>
           </nav>
 
-          {/* Page Title */}
-          <div className="border-b border-[#F0E5E0] pb-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#FFE7DF] bg-[#FFF2EE] px-3.5 py-1.5 text-xs font-bold text-[#FF5A3D] mb-4">
-              <Shield className="h-3.5 w-3.5" />
-              Data Protection &amp; Confidentiality
+          {/* CRITICAL TECHNICAL CONTRACTOR & DATA PROTECTION NOTICE */}
+          <div className="rounded-3xl border-2 border-[#FB5B5B]/40 bg-gradient-to-br from-[#FFF5F3] via-[#FFEBE8] to-[#FFF0EC] p-6 sm:p-8 shadow-md mb-10">
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FB5B5B] text-white shadow-sm">
+                <ShieldAlert className="h-6 w-6" />
+              </div>
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-[#FB5B5B]/15 px-3 py-1 text-xs font-black uppercase tracking-wider text-[#FB5B5B]">
+                  Contractor Data Protection Notice
+                </div>
+                <h2 className="text-xl sm:text-2xl font-black text-[#1E2637] tracking-tight">
+                  Independent Technical Assignment &bull; Zero Data Monetization
+                </h2>
+                <p className="text-sm sm:text-base leading-relaxed text-[#4A5568] font-medium">
+                  <strong className="text-[#1E2637] font-bold">DATA PRIVACY CLARIFICATION:</strong> The webmasters and developers behind <strong className="font-mono text-[#1E2637]">dmplaylogin5.com</strong> are independent technical SEO contractors. We are commissioned solely to perform front-end optimization and technical search indexing.
+                </p>
+                <div className="rounded-2xl bg-white/80 p-4 border border-[#F2D7D2] text-xs sm:text-sm text-[#3E495B] space-y-2">
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">Zero User Data Harvesting:</strong> We do NOT collect, harvest, store, or sell any personal identifying information, phone numbers, email addresses, or financial data.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">Zero Banking Access:</strong> This website does not possess any payment gateway, wallet infrastructure, or financial collection mechanism.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">Non-Operator Status:</strong> We have no access to external player databases, game rounds, or account passwords.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1E2637]">
-              Privacy Policy
+          </div>
+
+          {/* Page Heading */}
+          <div className="border-b border-[#F0E5E0] pb-8">
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E2637]">
+              Privacy &amp; Data Security Policy
             </h1>
-            <p className="mt-4 text-base sm:text-lg text-[#5A6578] leading-relaxed">
-              Last Updated: <strong className="text-[#1E2637]">November 2026</strong>. This document explains how <strong className="text-[#1E2637]">dmplaylogin5.com</strong> handles digital information, user visits, cookie preferences, and security protocols.
+            <p className="mt-3 text-base text-[#5A6578] leading-relaxed">
+              Transparent declaration of data handling protocols, technical log usage, cookie limits, and Indian IT Act (SPDI) compliance governing <strong className="text-[#1E2637]">dmplaylogin5.com</strong>.
             </p>
           </div>
 
-          {/* Privacy Core Highlights */}
+          {/* Detailed Content Sections */}
           <div className="mt-10 space-y-8 text-sm sm:text-base text-[#5A6578] leading-relaxed">
-            {/* Section 1: Non-Collection of Sensitive Credentials */}
+            {/* Section 1: Non-Collection Guarantee */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2EE] text-[#FF5A3D]">
                   <EyeOff className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">1. Strict Non-Collection of Financial Credentials</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">1. Absolute Non-Collection of Financial &amp; Gaming Credentials</h2>
               </div>
               <p>
-                <strong className="text-[#1E2637]">dmplaylogin5.com</strong> is strictly an informational promotional guide and navigation gateway. We do <strong className="text-[#FF5A3D] underline">NOT</strong> collect, request, process, or store:
+                As external technical SEO contractors, our technical setup enforces absolute client-side neutrality. Under no circumstances do we collect or retain:
               </p>
-              <ul className="mt-3 list-disc pl-5 space-y-1.5">
-                <li>Your gaming passwords, PINs, or biometric credentials.</li>
-                <li>Your bank account details, UPI MPINs, or debit/credit card numbers.</li>
-                <li>One-Time Passwords (OTPs) generated by SMS or authenticators.</li>
+              <ul className="mt-3 list-disc pl-5 space-y-2">
+                <li>Player account passwords, authentication tokens, or biometric inputs.</li>
+                <li>Bank account numbers, IFSC codes, UPI MPINs, or debit/credit card security numbers (CVVs).</li>
+                <li>SMS or WhatsApp One-Time Passwords (OTPs).</li>
+                <li>Gameplay records, game logs, or wager histories.</li>
               </ul>
               <p className="mt-3 text-xs bg-[#FFFDFC] border border-[#F2E8E4] p-3 rounded-xl">
-                When you click &ldquo;Login&rdquo; or &ldquo;Register&rdquo;, your browser establishes an encrypted direct TLS connection to the authentic external game operator server.
+                When a user interacts with external action buttons, they are routed via HTTPS directly to external third-party servers. We do not intermediate, inspect, or intercept the communication payload.
               </p>
             </section>
 
-            {/* Section 2: Technical Logs & Anti-Spam */}
+            {/* Section 2: Automated Server Telemetry */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF6FF] text-[#54B0FD]">
                   <Server className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">2. Automatically Logged Technical Data</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">2. Technical Infrastructure Telemetry Logs</h2>
               </div>
               <p>
-                Like all modern web servers, when you navigate our site, standard automated server logs are generated for infrastructure monitoring and malicious bot prevention:
+                To maintain uptime and defend against distributed denial-of-service (DDoS) cyber attacks, our server generates standard ephemeral network logs:
               </p>
               <ul className="mt-3 list-disc pl-5 space-y-1.5">
-                <li><strong className="text-[#1E2637]">Internet Protocol (IP) Address:</strong> Used strictly for geographic routing, rate limiting, and DDoS mitigation.</li>
-                <li><strong className="text-[#1E2637]">Browser &amp; Device Type:</strong> User-agent strings to ensure responsive layout rendering on Android, iOS, Windows, and macOS.</li>
-                <li><strong className="text-[#1E2637]">Referrer Information:</strong> Domain source URL and timestamp of page visit.</li>
+                <li><strong className="text-[#1E2637]">IP Address:</strong> Utilized strictly by CDN firewalls for regional rate-limiting and threat blocking.</li>
+                <li><strong className="text-[#1E2637]">Browser User-Agent:</strong> Analyzed purely to deliver optimized responsive layout rendering.</li>
+                <li><strong className="text-[#1E2637]">HTTP Request Headers:</strong> Ephemeral server metrics retained temporarily and purged periodically.</li>
               </ul>
             </section>
 
-            {/* Section 3: Cookies & Storage */}
+            {/* Section 3: Cookies & Local Storage */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF5EB] text-[#FEAA57]">
                   <Cookie className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">3. Cookie Policy &amp; Tracking Preferences</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">3. Cookie Policy &amp; Tracking Limitations</h2>
               </div>
               <p>
-                We use small data files termed cookies and local storage tokens solely to maintain site speed, retain user display preferences (such as accordion open states), and optimize CDN asset caching.
+                We do not employ aggressive cross-site tracking beacons or commercial third-party behavioral profiling cookies. Any localized cookies or cache tokens serve purely functional goals:
               </p>
+              <ul className="mt-3 list-disc pl-5 space-y-1.5">
+                <li>Preserving UI accordion state toggle preferences.</li>
+                <li>Accelerating CDN content caching and static asset distribution.</li>
+              </ul>
               <p className="mt-3">
-                You have full control over cookies. You may configure your browser (Google Chrome, Apple Safari, Mozilla Firefox) to block or delete cookies at any time without impacting your ability to browse this guide.
+                Users may disable cookies entirely through their browser settings without experiencing any interruption to text content availability.
               </p>
             </section>
 
-            {/* Section 4: 256-Bit TLS Security */}
+            {/* Section 4: Cryptographic Security Standards */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF8F1] text-[#18B660]">
                   <Lock className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">4. 256-Bit TLS 1.3 Cryptographic Security</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">4. 256-Bit TLS 1.3 Encryption &amp; Security Headers</h2>
               </div>
               <p>
-                All data transmission between your device and <strong className="text-[#1E2637]">dmplaylogin5.com</strong> is protected by end-to-end 256-bit Transport Layer Security (TLS 1.3) with HTTP Strict Transport Security (HSTS) enabled. This prevents eavesdropping, tampering, or man-in-the-middle packet sniffing.
+                All browser interactions with <strong className="text-[#1E2637]">dmplaylogin5.com</strong> are protected by cryptographic transport protocols:
               </p>
+              <ul className="mt-3 list-disc pl-5 space-y-1.5">
+                <li><strong className="text-[#1E2637]">HSTS Enforcement:</strong> Strict-Transport-Security preloaded for automated HTTPS routing.</li>
+                <li><strong className="text-[#1E2637]">X-Frame-Options DENY:</strong> Absolute protection against clickjacking and hidden iframe embedding.</li>
+                <li><strong className="text-[#1E2637]">X-Content-Type-Options nosniff:</strong> Prevention of malicious MIME-type execution.</li>
+              </ul>
             </section>
 
-            {/* Section 5: Indian IT Act & User Rights */}
+            {/* Section 5: Statutory Compliance */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">5. Legal Compliance &amp; User Inquiries</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2EE] text-[#FF5A3D]">
+                  <Gavel className="h-5 w-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">5. Statutory Compliance &amp; Intermediary Safe Harbor</h2>
+              </div>
               <p>
-                We adhere to the Information Technology Act (2000) and Sensitive Personal Data or Information (SPDI) rules of India, along with globally accepted privacy standards. Users have the right to request clarification or deletion of any technical logs associated with their network visit.
+                This privacy architecture complies strictly with the <strong className="text-[#1E2637]">Information Technology Act, 2000 (India)</strong>, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (SPDI), and Section 79 intermediary safe harbor standards.
               </p>
-              <div className="mt-4 p-4 rounded-2xl bg-[#FFF2EE] border border-[#FFE7DF] text-xs text-[#1E2637]">
-                For privacy questions or data protection inquiries, reach out through our official community channel at <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer nofollow" className="font-bold text-[#54B0FD] underline">DM Play Official Telegram</a>.
+              <div className="mt-4 p-4 rounded-2xl bg-[#FFF8F5] border border-[#F0E5E0] text-xs text-[#5A6578]">
+                For technical privacy inquiries, contact our community administrators via <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer nofollow" className="font-bold text-[#54B0FD] underline">DM Play Official Telegram</a>.
               </div>
             </section>
           </div>
         </div>
       </main>
 
-      {/* Main Screen Unified Footer */}
+      {/* Main Screen Unified 2-Column Footer */}
       <Footer />
     </div>
   );

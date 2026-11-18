@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig, LOGIN_URL, REGISTER_URL, TELEGRAM_URL } from "@/config/site";
+import { siteConfig, LOGIN_URL, REGISTER_URL } from "@/config/site";
 import Footer from "@/components/Footer";
 import {
-  FileText,
-  CheckCircle2,
-  AlertCircle,
-  ExternalLink,
-  ChevronRight,
-  Shield,
   Gavel,
+  ShieldAlert,
+  ChevronRight,
+  Scale,
+  AlertTriangle,
+  FileText,
+  Lock,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | DM Play Login Portal (dmplaylogin5.com)",
+  title: "Terms & Conditions | Independent Technical Contractor Legal Terms",
   description:
-    "Terms and conditions governing the use of the dmplaylogin5.com informational gateway, user obligations, intellectual property, and liability limitations.",
+    "Terms of Service governing dmplaylogin5.com. As independent technical SEO contractors, we do not operate, promote, or assume liability for external gaming platforms.",
   alternates: {
     canonical: `${siteConfig.url}/terms`,
   },
   openGraph: {
-    title: "Terms & Conditions | DM Play Login Portal (dmplaylogin5.com)",
+    title: "Terms & Conditions | Independent Technical Contractor Legal Terms",
     description:
-      "Terms and conditions governing the use of the dmplaylogin5.com informational gateway, user obligations, intellectual property, and liability limitations.",
+      "Terms of Service governing dmplaylogin5.com. As independent technical SEO contractors, we do not operate, promote, or assume liability for external gaming platforms.",
     url: `${siteConfig.url}/terms`,
   },
 };
 
 export default function TermsPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <div className="flex min-h-screen flex-col bg-[#FFF7F4] text-[#1E2637]">
       {/* Top Header Bar */}
@@ -60,7 +58,7 @@ export default function TermsPage() {
               rel="noopener noreferrer nofollow sponsored"
               className="flex items-center justify-center rounded-full border border-[#F0E5E0] bg-[#FFF9F7] px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-[#1E2637] transition-all hover:border-[#FF5A3D] hover:text-[#FF5A3D]"
             >
-              Login
+              Login Gateway
             </a>
           </div>
         </div>
@@ -73,99 +71,139 @@ export default function TermsPage() {
           <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-[#717A8A]">
             <Link href="/" className="hover:text-[#FF5A3D] transition-colors">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <span className="font-semibold text-[#1E2637]">Terms of Service</span>
+            <span className="font-semibold text-[#1E2637]">Terms &amp; Conditions</span>
           </nav>
 
-          {/* Page Title */}
-          <div className="border-b border-[#F0E5E0] pb-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#FFE7DF] bg-[#FFF2EE] px-3.5 py-1.5 text-xs font-bold text-[#FF5A3D] mb-4">
-              <Gavel className="h-3.5 w-3.5" />
-              Legal Terms &amp; Conditions
+          {/* CRITICAL TECHNICAL CONTRACTOR & SAFE HARBOR BANNER */}
+          <div className="rounded-3xl border-2 border-[#FB5B5B]/40 bg-gradient-to-br from-[#FFF5F3] via-[#FFEBE8] to-[#FFF0EC] p-6 sm:p-8 shadow-md mb-10">
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FB5B5B] text-white shadow-sm">
+                <ShieldAlert className="h-6 w-6" />
+              </div>
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-[#FB5B5B]/15 px-3 py-1 text-xs font-black uppercase tracking-wider text-[#FB5B5B]">
+                  Contractor Legal Safe Harbor
+                </div>
+                <h2 className="text-xl sm:text-2xl font-black text-[#1E2637] tracking-tight">
+                  Independent Technical Assignment &bull; Full Limitation of Liability
+                </h2>
+                <p className="text-sm sm:text-base leading-relaxed text-[#4A5568] font-medium">
+                  <strong className="text-[#1E2637] font-bold">BINDING LEGAL DECLARATION:</strong> This website (<strong className="font-mono text-[#1E2637]">dmplaylogin5.com</strong>) is an independent technical project developed and managed strictly under a third-party <strong className="text-[#1E2637]">technical search engine optimization (SEO) and web performance contract</strong>.
+                </p>
+                <div className="rounded-2xl bg-white/80 p-4 border border-[#F2D7D2] text-xs sm:text-sm text-[#3E495B] space-y-2">
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">No Game Operation:</strong> The developers and technical contractors do NOT operate, own, manage, promote, or solicit users to play any online game, betting, casino, or wagering platform.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">No Financial Agency:</strong> No payments, deposits, withdrawals, or player accounts are handled or stored by this contractor.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">Absolute Disclaimer of Liability:</strong> By accessing this domain, you irrevocably agree that the technical developers and SEO contractors bear zero liability for any external transactions, gameplay outcomes, or financial losses incurred on third-party sites.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1E2637]">
+          </div>
+
+          {/* Page Heading */}
+          <div className="border-b border-[#F0E5E0] pb-8">
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E2637]">
               Terms &amp; Conditions
             </h1>
-            <p className="mt-4 text-base sm:text-lg text-[#5A6578] leading-relaxed">
-              Effective Date: <strong className="text-[#1E2637]">November 2026</strong>. By accessing or browsing <strong className="text-[#1E2637]">dmplaylogin5.com</strong>, you agree to comply with and be bound by the following terms.
+            <p className="mt-3 text-base text-[#5A6578] leading-relaxed">
+              Legally binding terms governing access to <strong className="text-[#1E2637]">dmplaylogin5.com</strong>. Continued access constitutes absolute acceptance of these terms.
             </p>
           </div>
 
-          {/* Core Terms */}
+          {/* Detailed Content Sections */}
           <div className="mt-10 space-y-8 text-sm sm:text-base text-[#5A6578] leading-relaxed">
-            {/* Section 1: Informational Portal Scope */}
+            {/* Section 1: Technical Contractor Scope */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">1. Scope of the Informational Portal</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2EE] text-[#FF5A3D]">
+                  <Scale className="h-5 w-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">1. Purpose &amp; Scope of Technical Project</h2>
+              </div>
               <p>
-                <strong className="text-[#1E2637]">dmplaylogin5.com</strong> operates as an independent informational, educational, and promotional player acquisition directory. This website does not host real-money games on its own servers, does not accept customer financial deposits, and does not conduct wagering transactions directly on this domain.
+                <strong className="text-[#1E2637]">dmplaylogin5.com</strong> serves strictly as a technical demonstration, search engine ranking showcase, and informative routing gateway. The webmasters and contractors are engaged solely for:
+              </p>
+              <ul className="mt-3 list-disc pl-5 space-y-2">
+                <li>Search engine crawlability optimization and technical speed enhancements.</li>
+                <li>Structuring technical informational pages and Schema.org semantic data.</li>
+                <li>Maintaining uptime, SSL encryption certificates, and DNS routing.</li>
+              </ul>
+              <p className="mt-3">
+                The technical contractors do NOT operate the underlying gaming engines, do not manage player balances, and do not provide customer financial support.
               </p>
             </section>
 
-            {/* Section 2: Eligibility & 18+ Policy */}
+            {/* Section 2: User Eligibility & 18+ Warranty */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">2. User Eligibility &amp; Legal Capacity</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF5EB] text-[#FEAA57]">
+                  <AlertTriangle className="h-5 w-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">2. User Age Warranty &amp; Regional Compliance</h2>
+              </div>
               <p>
-                By using this portal, you affirm and warrant that:
+                As a condition of accessing this site, every user warrants and represents that:
               </p>
-              <ul className="mt-3 list-disc pl-5 space-y-1.5">
-                <li>You are at least <strong className="text-[#1E2637]">18 years of age</strong> or of legal majority in your country of residence.</li>
-                <li>Online gaming, skill games, and colour prediction entertainment are legally permissible in your municipal state or region.</li>
-                <li>You are using authentic, unmanipulated device hardware and internet connections.</li>
+              <ul className="mt-3 list-disc pl-5 space-y-2">
+                <li>They are at least <strong className="text-[#1E2637]">18 years of age</strong> (or the legal age of majority in their jurisdiction).</li>
+                <li>They reside in a state, province, or territory where online entertainment and digital gaming are strictly legal.</li>
+                <li>They assume 100% individual responsibility for verifying local municipal and state regulations.</li>
               </ul>
             </section>
 
             {/* Section 3: External Redirection & Third-Party Platforms */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">3. External Redirection &amp; Operator Accounts</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF8F1] text-[#18B660]">
+                  <Lock className="h-5 w-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">3. Third-Party Redirection &amp; Independent Operators</h2>
+              </div>
               <p>
-                When clicking outbound buttons such as &ldquo;Login&rdquo;, &ldquo;Registration&rdquo;, or walkthrough steps, you are routed via encrypted redirect to the authentic operator platform at <strong className="text-[#1E2637]">dmplay20.com</strong>.
+                All call-to-action buttons redirect visitors to external third-party domains (such as <strong className="font-mono text-[#1E2637]">dmplay20.com</strong>) operated by entirely independent entities:
               </p>
-              <p className="mt-3">
-                All gameplay rules, deposit confirmations, payout timelines, and wallet balances are subject strictly to the end-operator terms of service. We bear no liability for operator server maintenance, gameplay disputes, or external platform connectivity outages.
-              </p>
-            </section>
-
-            {/* Section 4: Prohibited Conduct */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">4. Prohibited User Conduct</h2>
-              <p>Visitors are strictly forbidden from engaging in the following actions:</p>
-              <ul className="mt-3 list-disc pl-5 space-y-1.5">
-                <li>Automated scraping, crawling, or extracting content without prior explicit written consent.</li>
-                <li>Attempting to probe, scan, or exploit security vulnerabilities on our web server or CDN edge.</li>
-                <li>Publishing malicious mirrors, phishing clones, or misleading domain redirects utilizing our brand name.</li>
+              <ul className="mt-3 list-disc pl-5 space-y-2">
+                <li>We do not control, monitor, guarantee, or endorse external third-party software, RNG integrity, or financial payouts.</li>
+                <li>Any user who creates an account on external platforms enters into an independent contract with that external operator.</li>
+                <li>The technical SEO contractor bears zero legal, operational, or compensatory liability for external operator disputes.</li>
               </ul>
             </section>
 
-            {/* Section 5: Intellectual Property */}
+            {/* Section 4: Absolute Indemnification */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">5. Intellectual Property Rights</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2EE] text-[#FB5B5B]">
+                  <Gavel className="h-5 w-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">4. Comprehensive Indemnification of Developers</h2>
+              </div>
               <p>
-                All text, graphics, walkthrough screenshots, layout designs, and code on <strong className="text-[#1E2637]">dmplaylogin5.com</strong> are protected under international copyright and intellectual property laws. DM Play logos and brand graphics remain the exclusive property of their respective trademark holders.
+                By accessing this website, you explicitly agree to <strong className="text-[#1E2637]">indemnify, defend, and hold harmless</strong> the independent web developers, SEO specialists, system administrators, and hosting providers of <strong className="text-[#1E2637]">dmplaylogin5.com</strong> from and against any and all claims, liabilities, damages, losses, costs, or legal fees arising out of:
               </p>
+              <ul className="mt-3 list-disc pl-5 space-y-2">
+                <li>Your access to or use of external third-party gaming platforms.</li>
+                <li>Any financial losses, bets, or transactions conducted on third-party sites.</li>
+                <li>Any violation of local municipal laws or third-party rights committed by you.</li>
+              </ul>
             </section>
 
-            {/* Section 6: Limitation of Liability */}
+            {/* Section 5: Statutory Safe Harbor */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">6. Disclaimer of Warranties &amp; Limitation of Liability</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">5. Statutory Intermediary Status (Section 79 IT Act)</h2>
               <p>
-                This informational website is provided on an &ldquo;AS-IS&rdquo; and &ldquo;AS-AVAILABLE&rdquo; basis. We do not provide financial guarantees, mathematical win assurances, or warranties regarding the continuous availability of third-party operator servers.
-              </p>
-              <p className="mt-3">
-                Under no circumstances shall <strong className="text-[#1E2637]">dmplaylogin5.com</strong> or its administrators be liable for any direct, indirect, incidental, or consequential losses incurred as a result of participation in online interactive entertainment.
-              </p>
-            </section>
-
-            {/* Section 7: Updates to Terms */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">7. Modifications &amp; Updates</h2>
-              <p>
-                We reserve the right to amend these Terms and Conditions periodically to reflect technological updates, regulatory enhancements, or operator guidelines. Continued use of this domain signifies acceptance of modified terms.
+                Under <strong className="text-[#1E2637]">Section 79 of the Information Technology Act, 2000 (India)</strong>, this website functions purely as an intermediary technical communications link. The technical contractors do not initiate transmissions, do not choose the recipients, and do not modify the content transmitted by external operators. All statutory safe-harbor protections apply fully.
               </p>
             </section>
           </div>
         </div>
       </main>
 
-      {/* Main Screen Unified Footer */}
+      {/* Main Screen Unified 2-Column Footer */}
       <Footer />
     </div>
   );

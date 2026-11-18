@@ -125,11 +125,11 @@ export default function Footer() {
 
         {/* Disclaimer & Copyright */}
         <div className="mt-8 border-t border-[#1C2522] pt-6">
-          <p className="text-xs leading-relaxed text-[#717A8A]">
-            <strong className="text-white font-bold">Disclaimer:</strong> This website is an informational promotional and SEO acquisition portal for the official DMPlay platform. It is not the gaming application itself. No login credentials or financial payments are collected on this domain. By clicking Login or Register, you are redirected to the official external portal ({LOGIN_URL}). Please verify that online entertainment conforms with your local municipal and national regulations.
-          </p>
+          <div className="rounded-xl bg-white/5 border border-white/10 p-3.5 mb-4 text-xs leading-relaxed text-[#8E9794]">
+            <strong className="text-white font-bold">Independent Technical Contractor Notice:</strong> This website is developed and maintained by an independent technical web developer and SEO contractor engaged strictly for search engine indexing and technical performance optimization. Neither the developers nor webmasters operate, own, promote, or endorse any online game, betting, or real-money gaming activities. No login credentials or financial payments are collected on this domain. By clicking Login or Register, you are redirected to the external operator portal ({LOGIN_URL}). Please verify that online entertainment conforms with your local municipal and national regulations.
+          </div>
 
-          <div className="mt-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6F7A75]">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6F7A75]">
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
               <p>&copy; {currentYear} {siteConfig.name}. All rights reserved.</p>
               <span className="hidden sm:inline">&bull;</span>
@@ -139,7 +139,7 @@ export default function Footer() {
               <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
             </div>
             <p className="text-[#6F7A75]">
-              Strictly 18+ &bull; Responsible Gaming Portal
+              Strictly 18+ &bull; Independent Technical SEO Project
             </p>
           </div>
         </div>

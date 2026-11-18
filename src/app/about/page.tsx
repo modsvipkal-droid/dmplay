@@ -1,39 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig, LOGIN_URL, REGISTER_URL, TELEGRAM_URL } from "@/config/site";
+import { siteConfig, LOGIN_URL, REGISTER_URL } from "@/config/site";
 import Footer from "@/components/Footer";
 import {
-  ShieldCheck,
+  ShieldAlert,
   Cpu,
-  Gamepad2,
   Lock,
-  ArrowRight,
-  ExternalLink,
   ChevronRight,
-  Sparkles,
-  Zap,
-  Users,
+  Gavel,
+  Briefcase,
+  AlertTriangle,
+  FileCheck2,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About DM Play Login Portal | Platform Overview & Architecture",
+  title: "About Us | Independent Technical SEO Project & Legal Disclosure",
   description:
-    "Learn about the DM Play Login portal at dmplaylogin5.com. Our mission, independent promotional architecture, 256-bit SSL gateway, and player community support.",
+    "Official disclosure regarding dmplaylogin5.com. This domain is an independent technical SEO optimization and web development project. We do not operate or promote gambling.",
   alternates: {
     canonical: `${siteConfig.url}/about`,
   },
   openGraph: {
-    title: "About DM Play Login Portal | Platform Overview & Architecture",
+    title: "About Us | Independent Technical SEO Project & Legal Disclosure",
     description:
-      "Learn about the DM Play Login portal at dmplaylogin5.com. Our mission, independent promotional architecture, 256-bit SSL gateway, and player community support.",
+      "Official disclosure regarding dmplaylogin5.com. This domain is an independent technical SEO optimization and web development project. We do not operate or promote gambling.",
     url: `${siteConfig.url}/about`,
   },
 };
 
 export default function AboutPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <div className="flex min-h-screen flex-col bg-[#FFF7F4] text-[#1E2637]">
       {/* Top Header Bar */}
@@ -58,20 +54,12 @@ export default function AboutPage() {
               &larr; Back to Home
             </Link>
             <a
-              href={REGISTER_URL}
-              target="_self"
-              rel="noopener noreferrer nofollow sponsored"
-              className="flex items-center justify-center rounded-full bg-gradient-to-r from-[#FF7A5C] to-[#FF5A3D] px-3.5 py-1.5 text-xs sm:text-sm font-bold text-white shadow-sm transition-all hover:opacity-95"
-            >
-              Register
-            </a>
-            <a
               href={LOGIN_URL}
               target="_self"
               rel="noopener noreferrer nofollow sponsored"
               className="flex items-center justify-center rounded-full border border-[#F0E5E0] bg-[#FFF9F7] px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-[#1E2637] transition-all hover:border-[#FF5A3D] hover:text-[#FF5A3D]"
             >
-              Login
+              Login Gateway
             </a>
           </div>
         </div>
@@ -84,142 +72,138 @@ export default function AboutPage() {
           <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-[#717A8A]">
             <Link href="/" className="hover:text-[#FF5A3D] transition-colors">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <span className="font-semibold text-[#1E2637]">About Us</span>
+            <span className="font-semibold text-[#1E2637]">About &amp; Contractor Disclosure</span>
           </nav>
 
-          {/* Page Header */}
-          <div className="border-b border-[#F0E5E0] pb-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#FFE7DF] bg-[#FFF2EE] px-3.5 py-1.5 text-xs font-bold text-[#FF5A3D] mb-4">
-              <Sparkles className="h-3.5 w-3.5" />
-              Official Portal Overview
+          {/* CRITICAL LEGAL & CONTRACTOR DISCLAIMER BANNER */}
+          <div className="rounded-3xl border-2 border-[#FB5B5B]/40 bg-gradient-to-br from-[#FFF5F3] via-[#FFEBE8] to-[#FFF0EC] p-6 sm:p-8 shadow-md mb-10">
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FB5B5B] text-white shadow-sm">
+                <ShieldAlert className="h-6 w-6" />
+              </div>
+              <div className="space-y-3">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-[#FB5B5B]/15 px-3 py-1 text-xs font-black uppercase tracking-wider text-[#FB5B5B]">
+                  Crucial Mandatory Legal Statement
+                </div>
+                <h2 className="text-xl sm:text-2xl font-black text-[#1E2637] tracking-tight">
+                  Independent Technical SEO Assignment &bull; Non-Promotional Declaration
+                </h2>
+                <p className="text-sm sm:text-base leading-relaxed text-[#4A5568] font-medium">
+                  <strong className="text-[#1E2637] font-bold">PLEASE READ CAREFULLY:</strong> This website (<strong className="font-mono text-[#1E2637]">dmplaylogin5.com</strong>) has been developed, designed, and optimized solely by an <strong className="text-[#1E2637]">independent third-party technical web development and search engine optimization (SEO) contractor</strong>. 
+                </p>
+                <div className="rounded-2xl bg-white/80 p-4 border border-[#F2D7D2] text-xs sm:text-sm text-[#3E495B] space-y-2">
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">No Game Operation or Promotion:</strong> We do NOT own, operate, manage, license, sponsor, promote, or encourage participation in any online casino, colour trading, wagering, betting, or real-money gaming operations.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">Technical Scope of Work:</strong> Our professional scope is strictly limited to technical search engine optimization (SEO ranking architecture, Core Web Vitals optimization, static HTML prerendering, and schema markup) performed pursuant to an independent development contract.
+                  </p>
+                  <p>
+                    &bull; <strong className="text-[#1E2637]">Zero Financial Involvement:</strong> We do NOT handle, process, intermediate, deposit, or disburse any player funds, bets, or withdrawals. No transactional accounts exist on this domain.
+                  </p>
+                </div>
+              </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1E2637]">
-              About DM Play Login Portal
+          </div>
+
+          {/* Page Heading */}
+          <div className="border-b border-[#F0E5E0] pb-8">
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E2637]">
+              About dmplaylogin5.com
             </h1>
-            <p className="mt-4 text-base sm:text-lg text-[#5A6578] leading-relaxed">
-              Welcome to <strong className="font-bold text-[#1E2637]">dmplaylogin5.com</strong>, the dedicated informational guide, promotional acquisition gateway, and onboarding resource for the DM Play online interactive gaming platform.
+            <p className="mt-3 text-base text-[#5A6578] leading-relaxed">
+              Comprehensive transparency documentation outlining the technological framework, independent contractor status, and strict non-operational legal boundaries governing this web property.
             </p>
           </div>
 
-          {/* Core Sections */}
-          <div className="mt-10 space-y-10 text-sm sm:text-base text-[#5A6578] leading-relaxed">
-            {/* Section 1: Our Mission */}
+          {/* Detailed Content Sections */}
+          <div className="mt-10 space-y-8 text-sm sm:text-base text-[#5A6578] leading-relaxed">
+            {/* Section 1: Independent Contractor Nature */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2EE] text-[#FF5A3D]">
-                  <Zap className="h-5 w-5" />
+                  <Briefcase className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">Our Mission &amp; Purpose</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">1. Nature of the Technical Engagement</h2>
               </div>
               <p>
-                Our core mission is to provide players across India and international regions with verified, transparent, and direct access to authentic DM Play gaming channels. In an environment often cluttered with unofficial mirror links and unverified third-party APK files, <strong className="text-[#1E2637]">dmplaylogin5.com</strong> acts as a secure lighthouse:
+                The administrators and developers maintaining this domain were commissioned strictly as external technical digital specialists. Our contractual mandate consists exclusively of:
               </p>
-              <ul className="mt-4 list-disc pl-5 space-y-2">
-                <li><strong className="text-[#1E2637]">Direct Authentication Gateway:</strong> Providing one-click encrypted access to genuine login and registration endpoints.</li>
-                <li><strong className="text-[#1E2637]">Educational Step-by-Step Guides:</strong> Detailed walkthroughs for wallet recharge, WinGo colour prediction mechanics, and 5-minute instant payouts.</li>
-                <li><strong className="text-[#1E2637]">Responsible Entertainment:</strong> Advocating strictly for 18+ player age compliance and responsible digital gaming practices.</li>
+              <ul className="mt-3 list-disc pl-5 space-y-2">
+                <li><strong className="text-[#1E2637]">Search Engine Architecture:</strong> Designing lightweight, responsive Next.js static layouts for high algorithmic crawl efficiency.</li>
+                <li><strong className="text-[#1E2637]">Performance Auditing:</strong> Ensuring page delivery scores adhere to Google Core Web Vitals (LCP, INP, CLS benchmarks).</li>
+                <li><strong className="text-[#1E2637]">Structured Schema Integration:</strong> Implementing W3C and Schema.org rich markup structures (Organization, WebSite, Breadcrumbs).</li>
               </ul>
-            </section>
-
-            {/* Section 2: Platform Architecture */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF8F1] text-[#18B660]">
-                  <Cpu className="h-5 w-5" />
-                </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">Zero-Download HTML5 Architecture</h2>
-              </div>
-              <p>
-                Authentic DM Play is engineered entirely on modern web standards. Unlike legacy gaming applications that require sideloading untrusted Android APK packages, DM Play operates 100% inside standard web browsers using lightweight WebSockets and high-performance HTML5 canvas rendering:
+              <p className="mt-3">
+                At no juncture do the developers or webmasters act as gaming operators, promoters, affiliate recruiters, or financial agents for any gaming brand.
               </p>
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4">
-                  <span className="block text-xl font-extrabold text-[#18B660]">&lt; 45ms</span>
-                  <span className="text-xs text-[#5A6578]">Ultra Low Latency</span>
-                </div>
-                <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4">
-                  <span className="block text-xl font-extrabold text-[#54B0FD]">0 MB</span>
-                  <span className="text-xs text-[#5A6578]">No Sideload Required</span>
-                </div>
-                <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4">
-                  <span className="block text-xl font-extrabold text-[#FF5A3D]">256-Bit</span>
-                  <span className="text-xs text-[#5A6578]">TLS 1.3 Encryption</span>
-                </div>
-              </div>
             </section>
 
-            {/* Section 3: Supported Interactive Catalog */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF6FF] text-[#54B0FD]">
-                  <Gamepad2 className="h-5 w-5" />
-                </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">Curated Entertainment Modes</h2>
-              </div>
-              <p>
-                The DM Play platform curates top-tier interactive titles designed for quick decision-making and dynamic odds:
-              </p>
-              <ul className="mt-4 space-y-3">
-                <li className="p-3 rounded-xl bg-[#FFFDFC] border border-[#F2E8E4]">
-                  <strong className="text-[#1E2637]">WinGo Colour Trading:</strong> Real-time 30-second, 1-minute, 3-minute, and 5-minute prediction rounds on Red, Green, Violet, and high-multiplier number balls (up to 50x).
-                </li>
-                <li className="p-3 rounded-xl bg-[#FFFDFC] border border-[#F2E8E4]">
-                  <strong className="text-[#1E2637]">K3 &amp; 5D Lotteries:</strong> Fast-paced dice sum analysis and numerical sequence draws with provably fair RNG algorithms.
-                </li>
-                <li className="p-3 rounded-xl bg-[#FFFDFC] border border-[#F2E8E4]">
-                  <strong className="text-[#1E2637]">Slots &amp; Aviator Multipliers:</strong> Crash curve strategy modes and interactive arcade titles with real-time cashout capabilities.
-                </li>
-              </ul>
-            </section>
-
-            {/* Section 4: Security & Financial Transparency */}
+            {/* Section 2: Non-Promotional Policy */}
             <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF5EB] text-[#FEAA57]">
-                  <Lock className="h-5 w-5" />
+                  <AlertTriangle className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">Security &amp; Financial Integrity</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">2. Absolute Non-Promotional &amp; Non-Endorsement Policy</h2>
               </div>
               <p>
-                Player trust is founded upon speed and reliability. DM Play incorporates automated settlement engines that support instant recharges via UPI-QR, Paytm, PhonePe, and USDT. Payout withdrawals are processed via direct Indian Bank Accounts (IMPS) within 3 to 5 minutes with zero platform withdrawal deductions.
+                Any outward hyperlinks, buttons, or informational guides discussing game mechanics (e.g., WinGo, K3, 5D, Aviator) exist strictly as descriptive technical representations of external third-party software environments. 
               </p>
-              <div className="mt-4 p-4 rounded-2xl bg-[#FFF2EE] border border-[#FFE7DF] text-xs text-[#FF5A3D] font-medium flex items-center gap-2">
-                <ShieldCheck className="h-5 w-5 shrink-0" />
-                <span>Notice: dmplaylogin5.com is an informational portal. We do NOT collect login credentials or handle payment funds on this domain. All actions redirect to the verified official server.</span>
+              <div className="mt-4 p-4 rounded-2xl bg-[#FFF8F5] border border-[#F0E5E0] text-xs sm:text-sm text-[#4A5568]">
+                <strong className="text-[#1E2637]">Express Disclaimer:</strong> We do NOT encourage, endorse, entice, or solicit any visitor to play real-money games or deposit money. We expressly warn all users that real-money gaming involves substantial risk of financial loss and potential addiction. Users must exercise their own independent judgement and comply with their regional laws.
               </div>
             </section>
 
-            {/* Call to action */}
-            <div className="rounded-3xl bg-gradient-to-r from-[#FF7A5C] to-[#FF5A3D] p-8 text-center text-white shadow-lg shadow-[#FF5A3D]/25">
-              <h3 className="text-2xl font-extrabold">Ready to Join Official DM Play?</h3>
-              <p className="mt-2 text-sm text-white/90 max-w-lg mx-auto">
-                Sign in to your player dashboard or register a new profile using official verified invitation code <strong className="font-mono text-white underline">{siteConfig.invitationCode}</strong>.
-              </p>
-              <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3.5">
-                <a
-                  href={REGISTER_URL}
-                  target="_self"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-3 text-sm font-bold text-[#FF5A3D] shadow-md hover:bg-[#FFF9F7] transition-all"
-                >
-                  Register Account
-                  <ArrowRight className="h-4 w-4" />
-                </a>
-                <a
-                  href={LOGIN_URL}
-                  target="_self"
-                  rel="noopener noreferrer nofollow sponsored"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-2xl border border-white/30 bg-black/10 px-7 py-3 text-sm font-bold text-white hover:bg-black/20 transition-all"
-                >
-                  Sign In
-                </a>
+            {/* Section 3: Statutory Safe Harbor */}
+            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF8F1] text-[#18B660]">
+                  <Gavel className="h-5 w-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">3. Intermediary Safe Harbor (Section 79 IT Act)</h2>
               </div>
-            </div>
+              <p>
+                This website operates strictly within the statutory safe-harbor protections afforded to technical intermediaries under <strong className="text-[#1E2637]">Section 79 of the Information Technology Act, 2000 (India)</strong> and equivalent international intermediary liability doctrines:
+              </p>
+              <ul className="mt-3 list-disc pl-5 space-y-2">
+                <li>This portal functions merely as a passive technical conduit transmitting or redirecting users to third-party endpoints.</li>
+                <li>The technical contractors do not initiate the transmission, do not select the receiver of the transmission, and do not modify the information contained in the external transmission.</li>
+                <li>We observe strict due diligence regarding intermediary guidelines and data security standards.</li>
+              </ul>
+            </section>
+
+            {/* Section 4: Technical Architecture */}
+            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF6FF] text-[#54B0FD]">
+                  <Cpu className="h-5 w-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">4. Technical Web Architecture</h2>
+              </div>
+              <p>
+                From an engineering standpoint, <strong className="text-[#1E2637]">dmplaylogin5.com</strong> is built on cutting-edge open web technologies:
+              </p>
+              <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4">
+                  <span className="block text-xl font-extrabold text-[#18B660]">100% Static</span>
+                  <span className="text-xs text-[#5A6578]">Next.js Prerendering</span>
+                </div>
+                <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4">
+                  <span className="block text-xl font-extrabold text-[#54B0FD]">256-Bit</span>
+                  <span className="text-xs text-[#5A6578]">TLS 1.3 Transport</span>
+                </div>
+                <div className="rounded-2xl border border-[#F2E8E4] bg-[#FFFDFC] p-4">
+                  <span className="block text-xl font-extrabold text-[#FF5A3D]">0 Storage</span>
+                  <span className="text-xs text-[#5A6578]">No Credentials Stored</span>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </main>
 
-      {/* Main Screen Unified Footer */}
+      {/* Main Screen Unified 2-Column Footer */}
       <Footer />
     </div>
   );
