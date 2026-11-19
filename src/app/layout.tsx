@@ -157,7 +157,7 @@ export default function RootLayout({
       {
         "@type": "Article",
         "@id": `${siteConfig.url}/#article`,
-        headline: "DM Play Login - Best Colour Trading Website & Complete Player Guide",
+        headline: siteConfig.title,
         description: siteConfig.description,
         author: {
           "@type": "Organization",

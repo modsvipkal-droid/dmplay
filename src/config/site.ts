@@ -15,9 +15,9 @@ export const siteConfig = {
   domain: "dmplaylogin5.com",
   url: "https://dmplaylogin5.com",
   ogImage: "https://dmplaylogin5.com/dmplay-icon.webp",
-  title: "DM Play Login (dmplaylogin) - Official Login & Registration",
+  title: "DM Play Game: Live 3 Min Withdrawal Proof & Easy Play",
   description:
-    "Official DM Play Login portal at dmplaylogin5.com. Complete your dmplaylogin & registration for Wingo, K3, instant bonuses & 5-minute fast UPI withdrawals.",
+    "DM Play par pending withdrawal ka issue ab turant solve. Code 97569840601 lagakar easy trading shuru karein aur 3 minute me apna balance Fix Karo",
   links: {
     login: LOGIN_URL,
     register: REGISTER_URL,
