@@ -255,6 +255,36 @@ const faqsData = [
     detailedAnswer:
       "Connect with community members, receive game maintenance notifications, and participate in special promotional events.",
   },
+  {
+    question: "Where can I get DM Play gift code today and how to use the DM Play invitation code?",
+    directAnswer:
+      "Direct Answer: Apply the verified DM Play invitation code " +
+      siteConfig.invitationCode +
+      " during your dmplay login or registration. Daily Wingo gift code today drops are released in the official Telegram channel for instant promotional wallet top-ups.",
+    detailedAnswer:
+      "To redeem a DM Play gift code, navigate to Account > Activity Center > Gift Code on the dashboard. Combining active gift codes with your invitation code grants deposit matches, VIP rebates, and daily check-in rewards across India's best colour prediction website.",
+  },
+  {
+    question: "How do I solve a DM Play withdrawal problem and contact dmplay customer care?",
+    directAnswer:
+      "Direct Answer: If you encounter a DM Play withdrawal problem with pending status, verify that your bank IFSC code and account details match your profile. For immediate 24/7 resolution, contact dmplay customer care directly via live chat or the official Telegram desk.",
+    detailedAnswer:
+      "Automated payouts are processed within 3 to 5 minutes via IMPS and UPI. If public banking network maintenance causes brief transaction delays, dmplay customer care agents prioritize manual verification to ensure prompt wallet settlement.",
+  },
+  {
+    question: "What is the Wingo 1 minute trick, Big Small trick, and how to read the colour prediction chart?",
+    directAnswer:
+      "Direct Answer: The Wingo 1 minute trick relies on reading historical streaks on the colour prediction chart. Players analyze trend patterns (such as Red-Green alternating or streak continuations) and apply the Wingo Big Small trick to balance statistical probability in the Big Small game.",
+    detailedAnswer:
+      "In Wingo colour prediction, reviewing the 10-period history chart helps identify recurring parity cycles. While no Wingo prediction formula guarantees wins due to certified RNG fairness, disciplined risk management and small-step staking optimize your gameplay on this online colour prediction platform.",
+  },
+  {
+    question: "How do Aviator game tricks, Aviator prediction, and K3 lottery tricks work on DM Play?",
+    directAnswer:
+      "Direct Answer: Aviator prediction and Aviator game tricks emphasize auto-cashout at 1.5x to 2.0x multipliers to capture steady gains before flight termination. Similarly, K3 lottery tricks focus on predicting high-frequency dice sum distributions (9 through 12).",
+    detailedAnswer:
+      "Because DM Play uses cryptographically verified RNG seeds, all game rounds are completely independent. Strategic multi-bet cashouts in Aviator paired with even-odd balance in K3 lottery provide an engaging experience across India's top colour trading website and colour prediction game platform.",
+  },
 ];
 
 /* =========================================================================
@@ -1063,6 +1093,34 @@ export default function Home() {
                       <p className="mt-1 text-xs text-[#5A6578] leading-relaxed">
                         Features real-time countdown timer, Green/Violet/Red buttons, number selectors (0-9), and one-tap multipliers (X1 to X50) with live outcome charts.
                       </p>
+                    </div>
+                  </div>
+
+                  {/* Strategic Analysis & Tricks Box */}
+                  <div className="mt-5 rounded-2xl border border-[#F0E5E0] bg-[#FFFDFC] p-5 space-y-3">
+                    <h4 className="text-base font-bold text-[#1E2637]">
+                      Wingo 1 Minute Trick, Big Small Game &amp; Prediction Strategies
+                    </h4>
+                    <p className="text-xs sm:text-sm text-[#5A6578] leading-relaxed">
+                      Maximizing your experience on India&apos;s <strong className="text-[#1E2637]">best colour prediction website</strong> requires statistical awareness rather than blind guessing. Here are key insights for active participants:
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs text-[#5A6578]">
+                      <div className="p-3.5 rounded-xl bg-white border border-[#F2E8E4]">
+                        <strong className="text-[#1E2637] block font-semibold mb-1">Wingo 1 Minute Trick &amp; Chart Trends:</strong>
+                        Consult the live <strong className="text-[#FF5A3D]">colour prediction chart</strong> before placing orders. Look for parity repetitions (2-2 or 3-1 colour sequences) in <strong className="text-[#1E2637]">wingo colour prediction</strong> to time your participation responsibly.
+                      </div>
+                      <div className="p-3.5 rounded-xl bg-white border border-[#F2E8E4]">
+                        <strong className="text-[#1E2637] block font-semibold mb-1">Wingo Big Small Trick:</strong>
+                        In the <strong className="text-[#1E2637]">big small game</strong>, Big (5-9) and Small (0-4) offer 50/50 probability. Tracking the last 15 rounds helps gauge streak balance during rapid <strong className="text-[#FF5A3D]">wingo prediction</strong> rounds.
+                      </div>
+                      <div className="p-3.5 rounded-xl bg-white border border-[#F2E8E4]">
+                        <strong className="text-[#1E2637] block font-semibold mb-1">Aviator Game Trick &amp; Prediction:</strong>
+                        Effective <strong className="text-[#1E2637]">aviator prediction</strong> relies on automated dual-cashout: setting Bet 1 to auto-withdraw at 1.5x to secure stakes, while letting Bet 2 target higher multipliers.
+                      </div>
+                      <div className="p-3.5 rounded-xl bg-white border border-[#F2E8E4]">
+                        <strong className="text-[#1E2637] block font-semibold mb-1">K3 Lottery Trick:</strong>
+                        For K3 dice, evaluate middle-sum distributions (totals 9, 10, 11, 12 have the highest mathematical frequency) on this <strong className="text-[#1E2637]">online colour prediction</strong> and <strong className="text-[#1E2637]">colour trading website</strong>.
+                      </div>
                     </div>
                   </div>
                 </div>
