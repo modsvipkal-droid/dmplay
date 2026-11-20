@@ -16,6 +16,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${siteConfig.url}/dm-play-register`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}/dm-play-withdrawal`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}/dm-play-invitation-code`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}/wingo-prediction-trick`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
       url: `${siteConfig.url}/about`,
       lastModified: siteConfig.lastUpdated,
       changeFrequency: "monthly",
