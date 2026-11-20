@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/about`,
     images: [
       {
-        url: `${siteConfig.url}/dmplay-icon.webp`,
-        width: 640,
-        height: 640,
-        alt: "DM Play Independent Technical Project",
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
       },
     ],
   },

@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: `${siteConfig.url}/dmplay-icon.webp`,
-        width: 640,
-        height: 640,
-        alt: "DM Play Register Portal & New Player Guide",
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
       },
     ],
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "DM Play Register: Online Account Sign Up & Welcome Bonus",
     description:
       "Direct DM Play register portal. Complete your mobile signup in 6 steps with verified invite code 97569840601, claim welcome bonuses, and fix OTP errors fast",
-    images: [`${siteConfig.url}/dmplay-icon.webp`],
+    images: [`${siteConfig.url}/dmplay-most-popular-game-site-india.webp`],
   },
 };
 

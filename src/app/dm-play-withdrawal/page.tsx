@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: `${siteConfig.url}/dmplay-icon.webp`,
-        width: 640,
-        height: 640,
-        alt: "DM Play Withdrawal Guide & Verified Settlement Proof",
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
       },
     ],
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "DM Play Withdrawal: 3 Min Instant Payout & Proof Guide",
     description:
       "Direct DM Play withdrawal portal. Complete your 3-5 minute UPI & bank card payout from ₹110 minimum, check real ₹5,000 proof, and fix pending delays fast",
-    images: [`${siteConfig.url}/dmplay-icon.webp`],
+    images: [`${siteConfig.url}/dmplay-most-popular-game-site-india.webp`],
   },
 };
 

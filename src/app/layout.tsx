@@ -77,10 +77,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: siteConfig.ogImage,
-        width: 640,
-        height: 640,
-        alt: `${siteConfig.name} Official Main Icon`,
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
+        type: "image/webp",
       },
     ],
   },
@@ -88,7 +89,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
+    images: [
+      {
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -132,7 +140,7 @@ export default function RootLayout({
           "@type": "ImageObject",
           url: `${siteConfig.url}/dmplay-icon.webp`,
         },
-        image: `${siteConfig.url}/dmplay-icon.webp`,
+        image: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
         sameAs: [siteConfig.links.telegram],
       },
       {
@@ -141,6 +149,13 @@ export default function RootLayout({
         url: siteConfig.url,
         name: siteConfig.title,
         description: siteConfig.description,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+          width: "1200",
+          height: "630",
+          caption: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
+        },
         isPartOf: {
           "@id": `${siteConfig.url}/#website`,
         },
@@ -172,6 +187,7 @@ export default function RootLayout({
         "@id": `${siteConfig.url}/#article`,
         headline: siteConfig.title,
         description: siteConfig.description,
+        image: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
         author: {
           "@type": "Organization",
           name: siteConfig.name,

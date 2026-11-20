@@ -14,7 +14,7 @@ export const siteConfig = {
   legalName: "DM Play Gaming Portal",
   domain: "dmplaylogin5.com",
   url: "https://dmplaylogin5.com",
-  ogImage: "https://dmplaylogin5.com/dmplay-icon.webp",
+  ogImage: "https://dmplaylogin5.com/dmplay-most-popular-game-site-india.webp",
   title: "DM Play Game: Live 3 Min Withdrawal Proof & Easy Play",
   description:
     "DM Play par pending withdrawal ka issue ab turant solve. Code 97569840601 lagakar easy trading shuru karein aur 3 minute me apna balance Fix Karo",

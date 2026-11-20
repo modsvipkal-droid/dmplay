@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: `${siteConfig.url}/dmplay-icon.webp`,
-        width: 640,
-        height: 640,
-        alt: "DM Play Login Portal & Problem Resolution Guide",
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
       },
     ],
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "DM Play Login: Fast Portal Sign In & Problem Resolution",
     description:
       "Direct DM Play login portal link. Complete your dmplay login in 3 steps, reset forgotten password, verify genuine domain, and fix stuck account errors fast",
-    images: [`${siteConfig.url}/dmplay-icon.webp`],
+    images: [`${siteConfig.url}/dmplay-most-popular-game-site-india.webp`],
   },
 };
 

@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: `${siteConfig.url}/dmplay-icon.webp`,
-        width: 640,
-        height: 640,
-        alt: "Wingo Prediction Trick & Colour Chart Strategy Guide",
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
       },
     ],
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Wingo Prediction Trick: 1 Min Chart Strategy & Big Small Guide",
     description:
       "Master the Wingo prediction trick on DM Play. Learn the 1-minute chart strategy, big small parity patterns, budget rules, and avoid fake telegram bot scams",
-    images: [`${siteConfig.url}/dmplay-icon.webp`],
+    images: [`${siteConfig.url}/dmplay-most-popular-game-site-india.webp`],
   },
 };
 

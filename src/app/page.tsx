@@ -501,6 +501,20 @@ export default function Home() {
                     </div>
                   </div>
 
+                  {/* Official DmPlay India Platform Banner */}
+                  <div className="my-4 overflow-hidden rounded-2xl border border-[#F0E5E0] shadow-xs bg-[#FFF7F4]">
+                    <Image
+                      src="/dmplay-most-popular-game-site-india.webp"
+                      alt="DmPlay Most Popular Game Site India - Stable, Safe and Fast"
+                      title="DmPlay Gaming Platform India"
+                      width={1200}
+                      height={630}
+                      style={{ width: "100%", height: "auto" }}
+                      className="rounded-2xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                      priority
+                    />
+                  </div>
+
                   {/* Dual 3D Hero Phone Mockup Showcase */}
                   <div className="relative my-5 flex items-center justify-center min-h-[270px] py-2">
                     {/* Background Soft Glow */}

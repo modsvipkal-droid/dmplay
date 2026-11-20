@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: `${siteConfig.url}/dmplay-icon.webp`,
-        width: 640,
-        height: 640,
-        alt: "DM Play Invitation Code 97569840601 Bonus Portal",
+        url: `${siteConfig.url}/dmplay-most-popular-game-site-india.webp`,
+        width: 1200,
+        height: 630,
+        alt: "DmPlay Most Popular Game Site India - Stable, Safe and Fast",
       },
     ],
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "DM Play Invitation Code: 97569840601 Bonus & Commission Guide",
     description:
       "Verified DM Play invitation code 97569840601. Apply during signup for welcome deposit bonuses, claim daily VIP commission rebates, and fix invalid code errors fast",
-    images: [`${siteConfig.url}/dmplay-icon.webp`],
+    images: [`${siteConfig.url}/dmplay-most-popular-game-site-india.webp`],
   },
 };
 
