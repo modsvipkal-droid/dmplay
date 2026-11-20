@@ -18,18 +18,35 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "DM Play Login: Direct Sign In Link & Account Access 2026",
+  title: {
+    absolute: "DM Play Login: Fast Portal Sign In & Problem Resolution",
+  },
   description:
     "Direct DM Play login portal link. Complete your dmplay login in 3 steps, reset forgotten password, verify genuine domain, and fix stuck account errors fast",
   alternates: {
     canonical: `${siteConfig.url}/dm-play-login`,
   },
   openGraph: {
-    title: "DM Play Login: Direct Sign In Link & Account Access 2026",
+    title: "DM Play Login: Fast Portal Sign In & Problem Resolution",
     description:
       "Direct DM Play login portal link. Complete your dmplay login in 3 steps, reset forgotten password, verify genuine domain, and fix stuck account errors fast",
     url: `${siteConfig.url}/dm-play-login`,
     type: "article",
+    images: [
+      {
+        url: `${siteConfig.url}/dmplay-icon.webp`,
+        width: 640,
+        height: 640,
+        alt: "DM Play Login Portal & Problem Resolution Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DM Play Login: Fast Portal Sign In & Problem Resolution",
+    description:
+      "Direct DM Play login portal link. Complete your dmplay login in 3 steps, reset forgotten password, verify genuine domain, and fix stuck account errors fast",
+    images: [`${siteConfig.url}/dmplay-icon.webp`],
   },
 };
 
