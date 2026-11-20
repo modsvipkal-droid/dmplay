@@ -253,7 +253,8 @@ export default function WingoPredictionTrickPage() {
                     alt="DM Play Live WinGo Colour Trading Interface"
                     width={200}
                     height={400}
-                    className="w-full h-auto rounded-[18px]"
+                    style={{ width: "100%", height: "auto" }}
+                    className="rounded-[18px]"
                   />
                 </div>
                 <div className="space-y-3 text-xs sm:text-sm text-[#4A5568]">

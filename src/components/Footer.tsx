@@ -21,7 +21,8 @@ export default function Footer() {
               alt="DMPlay Logo"
               width={152}
               height={56}
-              className="h-10 w-auto object-contain brightness-110"
+              style={{ width: "auto", height: "40px" }}
+              className="object-contain brightness-110"
             />
           </Link>
           <p className="mt-4 text-xs sm:text-sm leading-relaxed text-[#8E9794] font-normal">

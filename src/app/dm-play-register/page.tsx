@@ -261,7 +261,8 @@ export default function DmPlayRegisterPage() {
                       alt="DM Play register your phone screen with phone number, password and invite code 97569840601 fields"
                       width={240}
                       height={480}
-                      className="w-full h-auto rounded-[18px]"
+                      style={{ width: "100%", height: "auto" }}
+                      className="rounded-[18px]"
                     />
                   </div>
                   <p className="mt-3 text-xs font-semibold text-[#1E2637] text-center">

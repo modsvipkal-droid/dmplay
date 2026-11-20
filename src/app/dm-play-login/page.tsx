@@ -269,7 +269,8 @@ export default function DmPlayLoginPage() {
                     alt="DM Play login screen verified portal access"
                     width={320}
                     height={200}
-                    className="rounded-xl shadow-sm object-cover"
+                    style={{ width: "auto", height: "auto" }}
+                    className="rounded-xl shadow-sm object-cover max-w-full"
                   />
                   <p className="mt-2 text-xs text-[#A48C82]">[IMAGE: login screen] — Verified DM Play secure login interface</p>
                 </div>
@@ -305,7 +306,8 @@ export default function DmPlayLoginPage() {
                       alt="DM Play register your phone screen with phone number, password and invite code 97569840601 fields"
                       width={240}
                       height={480}
-                      className="w-full h-auto rounded-[18px]"
+                      style={{ width: "100%", height: "auto" }}
+                      className="rounded-[18px]"
                     />
                   </div>
                   <p className="mt-3 text-xs font-semibold text-[#1E2637] text-center">
