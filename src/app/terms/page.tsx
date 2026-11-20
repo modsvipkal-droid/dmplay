@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig, LOGIN_URL, REGISTER_URL } from "@/config/site";
+import { siteConfig, LOGIN_URL } from "@/config/site";
 import Footer from "@/components/Footer";
 import {
   Gavel,
@@ -9,54 +9,66 @@ import {
   ChevronRight,
   Scale,
   AlertTriangle,
-  FileText,
   Lock,
+  ArrowLeft,
+  CheckCircle2,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Independent Technical Contractor Legal Terms",
+  title: {
+    absolute: "Terms & Conditions | Independent Contractor Legal Terms",
+  },
   description:
     "Terms of Service governing dmplaylogin5.com. As independent technical SEO contractors, we do not operate, promote, or assume liability for external gaming platforms.",
   alternates: {
     canonical: `${siteConfig.url}/terms`,
   },
   openGraph: {
-    title: "Terms & Conditions | Independent Technical Contractor Legal Terms",
+    title: "Terms & Conditions | Independent Contractor Legal Terms",
     description:
       "Terms of Service governing dmplaylogin5.com. As independent technical SEO contractors, we do not operate, promote, or assume liability for external gaming platforms.",
     url: `${siteConfig.url}/terms`,
+    images: [
+      {
+        url: `${siteConfig.url}/dmplay-icon.webp`,
+        width: 640,
+        height: 640,
+        alt: "DM Play Terms and Conditions",
+      },
+    ],
   },
 };
 
 export default function TermsPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#FFF7F4] text-[#1E2637]">
+    <div className="flex min-h-screen flex-col bg-[#FAF8F6] text-[#1E2637]">
       {/* Top Header Bar */}
-      <header className="sticky top-0 z-50 border-b border-[#F0E5E0] bg-white/95 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+      <header className="sticky top-0 z-50 border-b border-[#EFE7E2] bg-white/90 backdrop-blur-md">
+        <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 sm:px-6 py-2.5">
           <Link href="/" className="flex items-center shrink-0 transition-opacity hover:opacity-90">
             <Image
               src="/dmplay.webp"
               alt="DMPlay Logo"
               width={152}
               height={56}
-              style={{ width: "140px", height: "auto" }}
+              style={{ width: "132px", height: "auto" }}
               className="object-contain"
               priority
             />
           </Link>
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2 sm:gap-3">
             <Link
               href="/"
-              className="text-xs sm:text-sm font-semibold text-[#5A6578] hover:text-[#FF5A3D] transition-colors px-2 py-1"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#5A6578] hover:text-[#FF5A3D] transition-colors px-2 py-1"
             >
-              &larr; Back to Home
+              <ArrowLeft className="h-3.5 w-3.5" />
+              <span>Back to Home</span>
             </Link>
             <a
               href={LOGIN_URL}
               target="_self"
               rel="noopener noreferrer nofollow sponsored"
-              className="flex items-center justify-center rounded-full border border-[#F0E5E0] bg-[#FFF9F7] px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-[#1E2637] transition-all hover:border-[#FF5A3D] hover:text-[#FF5A3D]"
+              className="inline-flex items-center justify-center rounded-xl border border-[#EFE7E2] bg-[#FAF8F6] px-3.5 py-1.5 text-xs font-bold text-[#1E2637] transition-all hover:border-[#FF5A3D] hover:text-[#FF5A3D] shadow-2xs"
             >
               Login Gateway
             </a>
@@ -65,109 +77,112 @@ export default function TermsPage() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 py-12 sm:py-16">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 py-7 sm:py-9">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
           {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-[#717A8A]">
+          <nav aria-label="Breadcrumb" className="mb-4 flex items-center gap-1.5 text-[11px] text-[#7E8B9B]">
             <Link href="/" className="hover:text-[#FF5A3D] transition-colors">Home</Link>
-            <ChevronRight className="h-3 w-3" />
+            <ChevronRight className="h-3 w-3 text-[#A9B4C2]" />
             <span className="font-semibold text-[#1E2637]">Terms &amp; Conditions</span>
           </nav>
 
-          {/* CRITICAL TECHNICAL CONTRACTOR & SAFE HARBOR BANNER */}
-          <div className="rounded-3xl border-2 border-[#FB5B5B]/40 bg-gradient-to-br from-[#FFF5F3] via-[#FFEBE8] to-[#FFF0EC] p-6 sm:p-8 shadow-md mb-10">
-            <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#FB5B5B] text-white shadow-sm">
-                <ShieldAlert className="h-6 w-6" />
+          {/* Page Heading */}
+          <div className="mb-5 pb-4 border-b border-[#EFE7E2]">
+            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#1E2637]">
+              Terms &amp; Conditions
+            </h1>
+            <p className="mt-1.5 text-xs sm:text-sm text-[#5E6B7E] leading-relaxed">
+              Legally binding terms governing access to <strong className="text-[#1E2637]">dmplaylogin5.com</strong>. Continued access constitutes absolute acceptance of these terms.
+            </p>
+          </div>
+
+          {/* CRITICAL TECHNICAL CONTRACTOR & SAFE HARBOR BANNER - Soft & Compact */}
+          <div className="rounded-2xl border border-[#FAD8D0] bg-gradient-to-r from-[#FFF7F5] via-[#FFF3EF] to-[#FFF6F4] p-4 sm:p-5 shadow-[0_2px_10px_rgba(255,90,61,0.03)] mb-5">
+            <div className="flex items-start gap-3.5">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#FFEAE5] text-[#E0482B] shadow-2xs">
+                <ShieldAlert className="h-5 w-5" />
               </div>
-              <div className="space-y-3">
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-[#FB5B5B]/15 px-3 py-1 text-xs font-black uppercase tracking-wider text-[#FB5B5B]">
+              <div className="space-y-2 flex-1">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-[#FFE8E2] px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-[#D84328]">
                   Contractor Legal Safe Harbor
                 </div>
-                <h2 className="text-xl sm:text-2xl font-black text-[#1E2637] tracking-tight">
+                <h2 className="text-base sm:text-lg font-bold text-[#1E2637] tracking-tight">
                   Independent Technical Assignment &bull; Full Limitation of Liability
                 </h2>
-                <p className="text-sm sm:text-base leading-relaxed text-[#4A5568] font-medium">
-                  <strong className="text-[#1E2637] font-bold">BINDING LEGAL DECLARATION:</strong> This website (<strong className="font-mono text-[#1E2637]">dmplaylogin5.com</strong>) is an independent technical project developed and managed strictly under a third-party <strong className="text-[#1E2637]">technical search engine optimization (SEO) and web performance contract</strong>.
+                <p className="text-xs sm:text-[13px] leading-relaxed text-[#4E5A6C]">
+                  This website (<strong className="font-mono text-[#1E2637]">dmplaylogin5.com</strong>) is an independent technical project developed and managed strictly under a third-party <strong className="text-[#1E2637]">technical SEO and web performance contract</strong>.
                 </p>
-                <div className="rounded-2xl bg-white/80 p-4 border border-[#F2D7D2] text-xs sm:text-sm text-[#3E495B] space-y-2">
-                  <p>
-                    &bull; <strong className="text-[#1E2637]">No Game Operation:</strong> The developers and technical contractors do NOT operate, own, manage, promote, or solicit users to play any online game, betting, casino, or wagering platform.
-                  </p>
-                  <p>
-                    &bull; <strong className="text-[#1E2637]">No Financial Agency:</strong> No payments, deposits, withdrawals, or player accounts are handled or stored by this contractor.
-                  </p>
-                  <p>
-                    &bull; <strong className="text-[#1E2637]">Absolute Disclaimer of Liability:</strong> By accessing this domain, you irrevocably agree that the technical developers and SEO contractors bear zero liability for any external transactions, gameplay outcomes, or financial losses incurred on third-party sites.
-                  </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 text-xs text-[#3E495B]">
+                  <div className="flex items-start gap-1.5 rounded-lg bg-white/80 p-2 border border-[#F2DDD7]">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-[#18B660] shrink-0 mt-0.5" />
+                    <span><strong>No Game Ops:</strong> No gaming operations or promotion.</span>
+                  </div>
+                  <div className="flex items-start gap-1.5 rounded-lg bg-white/80 p-2 border border-[#F2DDD7]">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-[#18B660] shrink-0 mt-0.5" />
+                    <span><strong>No Financials:</strong> No wallets, bets, or cashouts.</span>
+                  </div>
+                  <div className="flex items-start gap-1.5 rounded-lg bg-white/80 p-2 border border-[#F2DDD7]">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-[#18B660] shrink-0 mt-0.5" />
+                    <span><strong>Zero Liability:</strong> Full contractor indemnification.</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Page Heading */}
-          <div className="border-b border-[#F0E5E0] pb-8">
-            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1E2637]">
-              Terms &amp; Conditions
-            </h1>
-            <p className="mt-3 text-base text-[#5A6578] leading-relaxed">
-              Legally binding terms governing access to <strong className="text-[#1E2637]">dmplaylogin5.com</strong>. Continued access constitutes absolute acceptance of these terms.
-            </p>
-          </div>
-
-          {/* Detailed Content Sections */}
-          <div className="mt-10 space-y-8 text-sm sm:text-base text-[#5A6578] leading-relaxed">
+          {/* Detailed Content Cards - Compact & Soft */}
+          <div className="space-y-3.5 text-xs sm:text-[13.5px] text-[#4E5A6C] leading-relaxed">
             {/* Section 1: Technical Contractor Scope */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2EE] text-[#FF5A3D]">
-                  <Scale className="h-5 w-5" />
+            <section className="rounded-2xl border border-[#EFE7E2] bg-white p-4.5 sm:p-5 shadow-[0_2px_8px_rgba(25,20,15,0.02)]">
+              <div className="flex items-center gap-2.5 mb-2.5">
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF2EE] text-[#FF5A3D]">
+                  <Scale className="h-4 w-4" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">1. Purpose &amp; Scope of Technical Project</h2>
+                <h2 className="text-sm sm:text-base font-bold text-[#1E2637]">1. Purpose &amp; Scope of Technical Project</h2>
               </div>
               <p>
                 <strong className="text-[#1E2637]">dmplaylogin5.com</strong> serves strictly as a technical demonstration, search engine ranking showcase, and informative routing gateway. The webmasters and contractors are engaged solely for:
               </p>
-              <ul className="mt-3 list-disc pl-5 space-y-2">
+              <ul className="mt-2 space-y-1.5 list-disc pl-4 text-xs sm:text-[13px]">
                 <li>Search engine crawlability optimization and technical speed enhancements.</li>
                 <li>Structuring technical informational pages and Schema.org semantic data.</li>
                 <li>Maintaining uptime, SSL encryption certificates, and DNS routing.</li>
               </ul>
-              <p className="mt-3">
+              <p className="mt-2 pt-2 border-t border-[#F5EFEA] text-[12px] text-[#6E7B8E]">
                 The technical contractors do NOT operate the underlying gaming engines, do not manage player balances, and do not provide customer financial support.
               </p>
             </section>
 
             {/* Section 2: User Eligibility & 18+ Warranty */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF5EB] text-[#FEAA57]">
-                  <AlertTriangle className="h-5 w-5" />
+            <section className="rounded-2xl border border-[#EFE7E2] bg-white p-4.5 sm:p-5 shadow-[0_2px_8px_rgba(25,20,15,0.02)]">
+              <div className="flex items-center gap-2.5 mb-2.5">
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF5EB] text-[#F39838]">
+                  <AlertTriangle className="h-4 w-4" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">2. User Age Warranty &amp; Regional Compliance</h2>
+                <h2 className="text-sm sm:text-base font-bold text-[#1E2637]">2. User Age Warranty &amp; Regional Compliance</h2>
               </div>
               <p>
                 As a condition of accessing this site, every user warrants and represents that:
               </p>
-              <ul className="mt-3 list-disc pl-5 space-y-2">
-                <li>They are at least <strong className="text-[#1E2637]">18 years of age</strong> (or the legal age of majority in their jurisdiction).</li>
-                <li>They reside in a state, province, or territory where online entertainment and digital gaming are strictly legal.</li>
+              <ul className="mt-2 space-y-1.5 list-disc pl-4 text-xs sm:text-[13px]">
+                <li>They are at least <strong className="text-[#1E2637]">18 years of age</strong> (or legal age of majority in their jurisdiction).</li>
+                <li>They reside in a territory where online entertainment and digital gaming are strictly legal.</li>
                 <li>They assume 100% individual responsibility for verifying local municipal and state regulations.</li>
               </ul>
             </section>
 
             {/* Section 3: External Redirection & Third-Party Platforms */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EBF8F1] text-[#18B660]">
-                  <Lock className="h-5 w-5" />
+            <section className="rounded-2xl border border-[#EFE7E2] bg-white p-4.5 sm:p-5 shadow-[0_2px_8px_rgba(25,20,15,0.02)]">
+              <div className="flex items-center gap-2.5 mb-2.5">
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EBF8F1] text-[#18B660]">
+                  <Lock className="h-4 w-4" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">3. Third-Party Redirection &amp; Independent Operators</h2>
+                <h2 className="text-sm sm:text-base font-bold text-[#1E2637]">3. Third-Party Redirection &amp; Independent Operators</h2>
               </div>
               <p>
-                All call-to-action buttons redirect visitors to external third-party domains (such as <strong className="font-mono text-[#1E2637]">dmplay20.com</strong>) operated by entirely independent entities:
+                All call-to-action buttons redirect visitors to external third-party domains operated by entirely independent entities:
               </p>
-              <ul className="mt-3 list-disc pl-5 space-y-2">
+              <ul className="mt-2 space-y-1.5 list-disc pl-4 text-xs sm:text-[13px]">
                 <li>We do not control, monitor, guarantee, or endorse external third-party software, RNG integrity, or financial payouts.</li>
                 <li>Any user who creates an account on external platforms enters into an independent contract with that external operator.</li>
                 <li>The technical SEO contractor bears zero legal, operational, or compensatory liability for external operator disputes.</li>
@@ -175,42 +190,42 @@ export default function TermsPage() {
             </section>
 
             {/* Section 4: Absolute Indemnification */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2EE] text-[#FB5B5B]">
-                  <Gavel className="h-5 w-5" />
+            <section className="rounded-2xl border border-[#EFE7E2] bg-white p-4.5 sm:p-5 shadow-[0_2px_8px_rgba(25,20,15,0.02)]">
+              <div className="flex items-center gap-2.5 mb-2.5">
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FFF2EE] text-[#FB5B5B]">
+                  <Gavel className="h-4 w-4" />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637]">4. Comprehensive Indemnification of Developers</h2>
+                <h2 className="text-sm sm:text-base font-bold text-[#1E2637]">4. Comprehensive Indemnification of Developers</h2>
               </div>
               <p>
-                By accessing this website, you explicitly agree to <strong className="text-[#1E2637]">indemnify, defend, and hold harmless</strong> the independent web developers, SEO specialists, system administrators, and hosting providers of <strong className="text-[#1E2637]">dmplaylogin5.com</strong> from and against any and all claims, liabilities, damages, losses, costs, or legal fees arising out of:
+                By accessing this website, you explicitly agree to <strong className="text-[#1E2637]">indemnify, defend, and hold harmless</strong> the independent web developers, SEO specialists, system administrators, and hosting providers of <strong className="text-[#1E2637]">dmplaylogin5.com</strong> from any claims, liabilities, damages, losses, or legal fees arising from your access to external gaming sites or financial transactions conducted elsewhere.
               </p>
-              <ul className="mt-3 list-disc pl-5 space-y-2">
-                <li>Your access to or use of external third-party gaming platforms.</li>
-                <li>Any financial losses, bets, or transactions conducted on third-party sites.</li>
-                <li>Any violation of local municipal laws or third-party rights committed by you.</li>
-              </ul>
             </section>
 
             {/* Section 5: Statutory Safe Harbor */}
-            <section className="rounded-3xl border border-[#F0E5E0] bg-white p-6 sm:p-8 shadow-sm">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2637] mb-3">5. Statutory Intermediary Status (Section 79 IT Act)</h2>
+            <section className="rounded-2xl border border-[#EFE7E2] bg-white p-4.5 sm:p-5 shadow-[0_2px_8px_rgba(25,20,15,0.02)]">
+              <h2 className="text-sm sm:text-base font-bold text-[#1E2637] mb-2">5. Statutory Intermediary Status (Section 79 IT Act)</h2>
               <p>
-                Under <strong className="text-[#1E2637]">Section 79 of the Information Technology Act, 2000 (India)</strong>, this website functions purely as an intermediary technical communications link. The technical contractors do not initiate transmissions, do not choose the recipients, and do not modify the content transmitted by external operators. All statutory safe-harbor protections apply fully.
+                Under <strong className="text-[#1E2637]">Section 79 of the Information Technology Act, 2000 (India)</strong>, this website functions purely as an intermediary technical communications link. The technical contractors do not initiate transmissions, do not choose recipients, and do not modify external content. All statutory safe-harbor protections apply fully.
               </p>
             </section>
 
-            {/* Supporting Governance & Policy Resources */}
-            <div className="rounded-3xl border border-[#F0E5E0] bg-[#FFF9F7] p-6 text-sm text-[#5A6578]">
-              <h3 className="font-bold text-[#1E2637] text-base mb-2">Supporting Governance &amp; Policy Resources</h3>
-              <p>
-                For additional details regarding user privacy, contractor status, and player safety, consult our supporting documentation:
-              </p>
-              <div className="mt-4 flex flex-wrap gap-4 font-semibold text-[#1E2637]">
-                <Link href="/privacy" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">Privacy &amp; Data Security &rarr;</Link>
-                <Link href="/responsible-gaming" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">18+ Responsible Gaming Policy &rarr;</Link>
-                <Link href="/about" className="text-[#FF5A3D] underline underline-offset-2 hover:text-[#FF8C67]">About Technical Contractor &rarr;</Link>
-                <Link href="/" className="text-[#1E2637] underline underline-offset-2 hover:text-[#FF5A3D]">Homepage Guide &rarr;</Link>
+            {/* Quick Navigation Links */}
+            <div className="rounded-2xl border border-[#EFE7E2] bg-[#FAF8F6] p-4 text-xs text-[#5E6B7E]">
+              <h3 className="font-bold text-[#1E2637] text-xs uppercase tracking-wider mb-2">Supporting Governance &amp; Policy Resources</h3>
+              <div className="flex flex-wrap gap-2 pt-0.5">
+                <Link href="/privacy" className="inline-flex items-center rounded-lg bg-white border border-[#EFE7E2] px-2.5 py-1 text-xs font-semibold text-[#1E2637] hover:border-[#FF5A3D] hover:text-[#FF5A3D] transition-colors shadow-2xs">
+                  Privacy Policy &rarr;
+                </Link>
+                <Link href="/about" className="inline-flex items-center rounded-lg bg-white border border-[#EFE7E2] px-2.5 py-1 text-xs font-semibold text-[#1E2637] hover:border-[#FF5A3D] hover:text-[#FF5A3D] transition-colors shadow-2xs">
+                  About Technical Contractor &rarr;
+                </Link>
+                <Link href="/responsible-gaming" className="inline-flex items-center rounded-lg bg-white border border-[#EFE7E2] px-2.5 py-1 text-xs font-semibold text-[#1E2637] hover:border-[#FF5A3D] hover:text-[#FF5A3D] transition-colors shadow-2xs">
+                  18+ Responsible Gaming &rarr;
+                </Link>
+                <Link href="/" className="inline-flex items-center rounded-lg bg-white border border-[#EFE7E2] px-2.5 py-1 text-xs font-semibold text-[#FF5A3D] hover:bg-[#FFF2EE] transition-colors shadow-2xs">
+                  Return to Home &rarr;
+                </Link>
               </div>
             </div>
           </div>
